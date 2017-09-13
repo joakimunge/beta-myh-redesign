@@ -1,0 +1,98 @@
+/*
+    flex-grid
+
+    use like this:
+
+    <[element] class="row">
+        <[element] class="col-4">
+        </[element]>
+        <[element] class="col-8">
+        </[element]>
+    </[element]>
+*/
+
+:root {
+    --col-margin: 20px;
+    --col-padding: 20px;
+    --col-min-height: 40px;
+}
+
+/* styr procentuella bredderna / px */
+.container {
+  max-width: 1170px;
+  margin: 0 auto;
+}
+
+/* grunden för .colsen */
+.row {
+  display: flex;
+}
+
+/* för att visa nestade cols i annan bakgrundfärg */
+[class^="col"] > .row > [class^="col"] {
+  background: #333;
+  color: white;
+}
+
+/* alla klasser som startar med .col */
+[class^="col"] {
+  min-height: var(--col-min-height);
+  margin-right: var(--col-margin);
+  margin-bottom: var(--col-margin);
+  padding: var(--col-padding);
+}
+
+/* sista .col i en .row ta bort margin-right */
+[class^="col"]:last-child {
+  margin-right: 0;
+}
+
+.col-1 { flex: 1; }
+.col-2 { flex: 2; }
+.col-3 { flex: 3; }
+.col-4 { flex: 4; }
+.col-5 { flex: 5; }
+.col-6 { flex: 6; }
+.col-7 { flex: 7; }
+.col-8 { flex: 8; }
+.col-9 { flex: 9; }
+.col-10 { flex: 10; }
+.col-11 { flex: 11; }
+.col-12 { flex: 12; }
+
+/* 50%-col */
+.col {
+  flex-basis: 0;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+  max-width: 100%;
+}
+
+/*****************
+    utils 
+*****************/
+
+/* align everything inside the element center */
+.flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* if we only need horizontal center (text, images etc) */
+.text-center {
+  text-align: center;
+}
+
+/* media queries */
+@media all and (max-width: 520px) {
+
+    .row { 
+        flex-direction: column; 
+    }
+
+    [class^="col"] { 
+        margin-right: 0; 
+    }
+
+}
