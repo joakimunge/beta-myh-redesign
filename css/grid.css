@@ -17,24 +17,27 @@
     --col-min-height: 40px;
 }
 
-/* styr procentuella bredderna / px */
+/* 
+    it helps to set some kind of base width for media queries and more
+    could be fluid (full-width too)
+*/
 .container {
   max-width: 1170px;
   margin: 0 auto;
 }
 
-/* grunden för .colsen */
+/* the basis of the grid */
 .row {
   display: flex;
 }
 
-/* för att visa nestade cols i annan bakgrundfärg */
+/* temporary in order to show a different background colour for nested rows/cols */
 [class^="col"] > .row > [class^="col"] {
   background: #333;
   color: white;
 }
 
-/* alla klasser som startar med .col */
+/* every class that start with "col" */
 [class^="col"] {
   min-height: var(--col-min-height);
   margin-right: var(--col-margin);
@@ -42,7 +45,7 @@
   padding: var(--col-padding);
 }
 
-/* sista .col i en .row ta bort margin-right */
+/* for the last .col-class in a .row, remove the margin-right */
 [class^="col"]:last-child {
   margin-right: 0;
 }
