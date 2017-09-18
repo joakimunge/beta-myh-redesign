@@ -76,7 +76,7 @@
 .centred { display: flex; justify-content: center; align-items: center; } /* horizontally & vertically centred */
 
 /* media queries */
-@media all and (max-width: 520px) {
+@media all and (max-width: 640px) {
 
     .row { 
         flex-direction: column; 
