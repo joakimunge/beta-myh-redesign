@@ -1,0 +1,25 @@
+/* ------- Font Import ------- */
+
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800');
+
+/* --------------- */
+
+/* ------- General Styling ------- */
+
+* {
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+	font-family: 'Open Sans', 'Helvetica', 'Arial', sans-serif;
+}
+
+header[role=banner] {
+	display:flex;
+	width: 100%;
+	background-color: #FFF;
+	
+}
+
+
+
+
