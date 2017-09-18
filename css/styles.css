@@ -2,24 +2,81 @@
 
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800');
 
-/* --------------- */
 
 /* ------- General Styling ------- */
 
 * {
 	box-sizing: border-box;
-	padding: 0;
-	margin: 0;
+}
+
+body {
 	font-family: 'Open Sans', 'Helvetica', 'Arial', sans-serif;
 }
 
+/* ------- Header & Navigation ------- */
+
 header[role=banner] {
 	display:flex;
+	justify-content: space-between;
+	align-items: center;
 	width: 100%;
 	background-color: #FFF;
-	
+	color: #878787;
+	height: 5em;
 }
 
+header[role=banner] h1 {
+	display:none;
+} 
 
+header[role=banner] button.burger {
+	display:none;
+}
+
+nav[role=navigation] {
+	height:100%;
+	display:flex;
+	align-items: center;
+}
+
+nav[role=navigation] ul.menu {
+	display:flex;
+	justify-content:space-between;
+	height: 100%;
+}
+
+nav[role=navigation] ul.menu li a {
+	display:flex;
+	align-items: center;
+	padding:1.5em;
+	font-size: 0.800em;
+	font-weight: 700;
+	height: 100%;
+	color: #878787;
+	text-decoration: none;
+}
+
+nav[role=navigation] ul.menu li a:hover {
+	border-top: 4px solid #E94F37;
+}
+
+nav[role=navigation] ul.menu ul.dropdown__content {
+	display:none;
+}
+
+/* ------- Footer ------- */
+
+footer[role=footer] {
+	background-color:#393E41;
+	color: #F6F7EB;
+}
+
+/* ------- Media Queries ------- */
+
+@media all and (max-width: 1080px) {
+	header[role=banner] {
+		flex-direction: column;
+	}
+}
 
 
