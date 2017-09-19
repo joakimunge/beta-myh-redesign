@@ -43,6 +43,7 @@
   margin-right: var(--col-margin);
   margin-bottom: var(--col-margin);
   padding: var(--col-padding);
+  background: #ccc;
 }
 
 /* for the last .col-class in a .row, remove the margin-right */
