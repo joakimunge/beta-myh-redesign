@@ -44,60 +44,62 @@
 				<input class="input__search" type="text" name="search" placeholder="Sök..">
 			</form>
 	</header>
-	<main class="container">
-		<section class="row">
-			<article class="col-8 v-end dark">
-				<header>
-					<h2>Konferens om yrkeshögskola - 11 Oktober</h2>
-				</header>
-					<p>Den 7 september är sista dagen att skicka in ansökan om att bedriva YH-utbildning.</p>
-				<footer>
-					<p><time>6 september, 2017</time></p>
-				</footer>
-			</article>
-			<aside class="col-4 v-end dark">
-				<header>
-					<p>Nästkommande händelse</p>
-					<h2><time>25 september</time></h2>
-				</header>
-					<h4>YH-Seminarium i Stockholm för arbetsgivare.</h4>
-				<footer>
-					<p><time>6 september, 2017</time></p>
-					<p><a href="#">Se hela kalendern</a></p>
-				</footer>
-			</aside>
-		</section>
-		<section class="row">
-				<article class="col-12 v-end dark">
+	<main>
+		<div class="container">
+			<section class="row">
+				<article id="selected__item" class="col-8 v-end dark overlay--dark" role="listbox"> <!-- listbox is for accessability to show this is a carousel. role="option" will be used for each slide -->
+						<header>
+							<h2>Konferens om yrkeshögskola - 11 Oktober</h2>
+						</header>
+							<p>Den 7 september är sista dagen att skicka in ansökan om att bedriva YH-utbildning.</p>
+						<footer>
+							<p><time>6 september, 2017</time></p>
+						</footer>
+				</article>
+				<aside class="col-4 v-end dark overlay--dark">
 					<header>
-						<h2>Största satsningen någonsin kräver gemensam ansträngning</h2>
+						<p>Nästkommande händelse</p>
+						<h2><time>25 september</time></h2>
 					</header>
-						<p>Vi vet. Ni vet. Och politiken vet. Vad vet vi? Jo, vad yrkeshögskolan är, att den fungerar och är värd att satsa på.</p>
+						<h4>YH-Seminarium i Stockholm för arbetsgivare.</h4>
 					<footer>
-						<p><time>12 september, 2017</time></p>
+						<p><time>6 september, 2017</time></p>
+						<p><a href="#">Se hela kalendern</a></p>
+					</footer>
+				</aside>
+			</section>
+			<section class="row">
+					<article id="first" class="col-12 v-end dark overlay--dark">
+						<header>
+							<h2>Största satsningen någonsin kräver gemensam ansträngning</h2>
+						</header>
+							<p>Vi vet. Ni vet. Och politiken vet. Vad vet vi? Jo, vad yrkeshögskolan är, att den fungerar och är värd att satsa på.</p>
+						<footer>
+							<p><time>12 september, 2017</time></p>
+						</footer>
+					</article>
+				</section>
+			<section class="row">
+				<article id="second" class="col-4 v-end dark overlay--dark">
+					<header>
+						<h2>Tack för inskickade ansökningar om att bedriva YH-utbildning</h2>
+					</header>
+						<p>Nu påbörjar myndigheten sitt handläggningsarbete.</p>
+					<footer>
+						<p><time>8 september, 2017</time></p>
+					</footer>
+				</article>
+				<article id="third" class="col-8 v-end dark overlay--dark">
+					<header>
+						<h2>Imorgon stänger årets ansökningsomgång för YH</h2>
+					</header>
+						<p>Den 7 september är sista dagen att skicka in ansökan om att bedriva YH-utbildning.</p>
+					<footer>
+						<p><time>6 september, 2017</time></p>
 					</footer>
 				</article>
 			</section>
-		<section class="row">
-			<article class="col-4 v-end dark">
-				<header>
-					<h2>Tack för inskickade ansökningar om att bedriva YH-utbildning</h2>
-				</header>
-					<p>Nu påbörjar myndigheten sitt handläggningsarbete.</p>
-				<footer>
-					<p><time>8 september, 2017</time></p>
-				</footer>
-			</article>
-			<article class="col-8 v-end dark">
-				<header>
-					<h2>Imorgon stänger årets ansökningsomgång för YH</h2>
-				</header>
-					<p>Den 7 september är sista dagen att skicka in ansökan om att bedriva YH-utbildning.</p>
-				<footer>
-					<p><time>6 september, 2017</time></p>
-				</footer>
-			</article>
-		</section>
+		</div>
 	</main>
 	<footer role="footer">
 		<div class="container">

@@ -80,12 +80,55 @@ nav[role=navigation] ul.menu ul.dropdown__content {
 
 /* ------- Main ------- */
 
-main {
-	height:100%;
-}
-
 .row {
 	min-height: 300px;
+}
+
+article {
+	cursor:pointer;
+}
+
+.overlay--dark {
+	position:relative;
+	z-index:1;
+}
+
+.overlay--dark:after {
+	content: "";
+	height:auto;
+	width:auto;
+	position: absolute;
+	z-index: -1;
+	top: 0;
+	right: 0;
+	left: 0;
+	bottom: 0;
+	background: rgba(0, 0, 0, 0.5);
+	transition: all 0.3s ease-in-out;
+}
+
+.overlay--dark:hover:after {
+	top:50%;
+}
+
+#selected__item {
+	background: url('../assets/img/article_060917_2.jpg') no-repeat;
+	background-size:cover;
+}
+
+#first {
+	background: url('../assets/img/article_120917_1.jpg') no-repeat;
+	background-size:cover;
+}
+
+#second {
+	background: url('../assets/img/article_080917_1.jpg') no-repeat;
+	background-size:cover;
+}
+
+#third {
+	background: url('../assets/img/article_060917_1.jpg') no-repeat;
+	background-size:cover;
 }
 
 /* ------- Footer ------- */
