@@ -22,7 +22,7 @@
     could be fluid (full-width too)
 */
 .container {
-  max-width: 1170px;
+  max-width: 1660px;
   margin: 0 auto;
 }
 
@@ -73,10 +73,9 @@
 
 .h-end      { display: flex; justify-content: flex-end;} /* horizontally justify content within its container to the end */
 .v-end      { display: flex; flex-direction: column; justify-content: flex-end;} /* vertically justify content within its container to the end */
-.h-centred  { display: flex; justify-content: center; } /* horizontally centred */
-.v-centred  { display: flex; align-items: center; }  /* vertically centred */
-.centred { display: flex; justify-content: center; align-items: center; } /* horizontally & vertically centred */
-
+.h-centered  { display: flex; justify-content: center; } /* horizontally centred */
+.v-centered  { display: flex; align-items: center; }  /* vertically centred */
+.centered { display: flex; justify-content: center; align-items: center; } /* horizontally & vertically centred */
 /* media queries */
 @media all and (max-width: 640px) {
 
