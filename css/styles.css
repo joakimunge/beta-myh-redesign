@@ -17,12 +17,19 @@ body {
 
 header[role=banner] {
 	display:flex;
-	justify-content: space-between;
+	flex-direction: column;
 	align-items: center;
 	width: 100%;
 	background-color: #FFF;
 	color: #878787;
-	height: 5em;
+}
+
+.top, .bottom {
+	display:flex;
+	justify-content: space-between;
+	align-items:center;
+	height:5em;
+	padding:0 25px;
 }
 
 header[role=banner] h1 {
@@ -31,6 +38,24 @@ header[role=banner] h1 {
 
 header[role=banner] button.burger {
 	display:none;
+}
+
+.submenu {
+	height: 100%;
+	max-width: 960px;
+	display:flex;
+	justify-content: space-around;
+	align-items:center;
+}
+
+.submenu li a {
+	display:flex;
+	align-items: center;
+	padding:1.5em;
+	height: 100%;
+	text-decoration: none;
+	font-weight: 600;
+	font-size: 1.2rem; /* 12px */
 }
 
 .input__search {
@@ -80,12 +105,25 @@ nav[role=navigation] ul.menu ul.dropdown__content {
 
 /* ------- Main ------- */
 
-.row {
+main {
+	margin:25px 0;
+}
+
+.newsblock {
 	min-height: 300px;
 }
 
-article {
+.newsblock article {
 	cursor:pointer;
+}
+
+.storyblock {
+	box-shadow: 0px 3px 15px rgba(0,0,0,0.1);
+}
+
+.story {
+	margin-bottom:3rem;
+	color:#393E41;
 }
 
 .overlay--dark {

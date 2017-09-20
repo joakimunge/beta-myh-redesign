@@ -10,7 +10,8 @@
 	<link rel="stylesheet" type="text/css" href="css/styles.css">
 </head>
 <body>
-	<header class="container" role="banner">
+	<header class="container-fluid" role="banner">
+		<div class="container-fluid top">
 			<a href="#">
 				<h1>MYh - Myndigheten för yrkeshögskolan</h1>
 				<img src="https://www.myh.se/assets/images/myh_logo.png" width="150" alt="MYhs Logotyp" />
@@ -43,10 +44,20 @@
 			<form type="text" class="input">
 				<input class="input__search" type="text" name="search" placeholder="Sök..">
 			</form>
+		</div>
+		<div class="container-fluid dark">
+			<div class="container">
+				<ul class="submenu">
+					<li><a href="#">Ansök om att bedriva utbildning</a></li>
+					<li><a href="#">För dig som bedriver utbildning</a></li>
+					<li><a href="#">Företag och organisationer</a></li>
+				</ul>
+			</div>
+		</div>
 	</header>
 	<main>
 		<div class="container">
-			<section class="row">
+			<section class="row newsblock">
 				<article id="selected__item" class="col-8 v-end dark overlay--dark" role="listbox"> <!-- listbox is for accessability to show this is a carousel. role="option" will be used for each slide -->
 						<header>
 							<h2>Konferens om yrkeshögskola - 11 Oktober</h2>
@@ -68,7 +79,7 @@
 					</footer>
 				</aside>
 			</section>
-			<section class="row">
+			<section class="row newsblock">
 					<article id="first" class="col-12 v-end dark overlay--dark">
 						<header>
 							<h2>Största satsningen någonsin kräver gemensam ansträngning</h2>
@@ -79,7 +90,7 @@
 						</footer>
 					</article>
 				</section>
-			<section class="row">
+			<section class="row newsblock">
 				<article id="second" class="col-4 v-end dark overlay--dark">
 					<header>
 						<h2>Tack för inskickade ansökningar om att bedriva YH-utbildning</h2>
@@ -98,6 +109,65 @@
 						<p><time>6 september, 2017</time></p>
 					</footer>
 				</article>
+			</section>
+			<section class="row">
+				<div class="col-8 storyblock">
+					<div class="row">
+						<div class="col-4">
+							<img src="http://via.placeholder.com/150x150">
+						</div>
+						<div class="col-8">
+							<article class="story">
+								<h3>Test Header - Pretend Article</h3>
+								<p><time>6 september, 14:07</time></p>
+								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin sit amet risus ex. Pellentesque lacinia orci eu mi pellentesque, sit amet lacinia lectus luctus. Nam laoreet condimentum orci nec auctor.</p>
+							</article>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-4">
+							<img src="http://via.placeholder.com/150x150">
+						</div>
+						<div class="col-8">
+							<article class="story">
+								<h3>Test Header - Pretend Article</h3>
+								<p><time>6 september, 14:07</time></p>
+								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin sit amet risus ex. Pellentesque lacinia orci eu mi pellentesque, sit amet lacinia lectus luctus. Nam laoreet condimentum orci nec auctor.</p>
+							</article>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-4">
+							<img src="http://via.placeholder.com/150x150">
+						</div>
+						<div class="col-8">
+							<article class="story">
+								<h3>Test Header - Pretend Article</h3>
+								<p><time>6 september, 14:07</time></p>
+								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin sit amet risus ex. Pellentesque lacinia orci eu mi pellentesque, sit amet lacinia lectus luctus. Nam laoreet condimentum orci nec auctor.</p>
+							</article>
+						</div>
+					</div>
+				</div>
+				<div class="col-4 storyblock">
+					<article class="story">
+						<h4>Another article - Smaller?</h4>
+						<p><time>6 september, 14:07</time></p>
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin sit amet risus ex. Pellentesque lacinia orci eu mi pellentesqu.</p>
+					</article>
+
+					<article class="story">
+						<h4>Another article - Smaller?</h4>
+						<p><time>6 september, 14:07</time></p>
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin sit amet risus ex. Pellentesque lacinia orci eu mi pellentesqu.</p>
+					</article>
+
+					<article class="story">
+						<h4>Another article - Smaller?</h4>
+						<p><time>6 september, 14:07</time></p>
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin sit amet risus ex. Pellentesque lacinia orci eu mi pellentesqu.</p>
+					</article>
+				</div>
 			</section>
 		</div>
 	</main>

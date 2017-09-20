@@ -21,6 +21,15 @@
 			background-color:#393E41;
 		}
 
+		.dark a {
+			color:#F6F7EB;
+		}
+
+		.dark a:hover {
+			color:#E94F37;
+
+		}
+
 		.light {
 			color:#393E41;
 			background-color: #F6F7EB;
@@ -74,6 +83,5 @@
 		time {
 			font-size: 1.0rem; /* 10px */
 			line-height: 1.2;
-			margin-top:40rem;
 		}
 

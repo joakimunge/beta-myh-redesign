@@ -22,8 +22,13 @@
     could be fluid (full-width too)
 */
 .container {
-  max-width: 1660px;
+  max-width: 960px;
   margin: 0 auto;
+}
+
+.container-fluid {
+  min-width: 100%;
+  margin:0 auto;
 }
 
 /* the basis of the grid */
@@ -33,7 +38,7 @@
 
 /* temporary in order to show a different background colour for nested rows/cols */
 [class^="col"] > .row > [class^="col"] {
-  background: #333;
+  background: #fff;
   color: white;
 }
 
@@ -43,7 +48,6 @@
   margin-right: var(--col-margin);
   margin-bottom: var(--col-margin);
   padding: var(--col-padding);
-  background-color: #ccc;
 }
 
 /* for the last .col-class in a .row, remove the margin-right */
