@@ -5,22 +5,27 @@
 	<meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1.0">
 
 	<link rel="stylesheet" type="text/css" href="css/grid.css">
+	<link rel="stylesheet" type="text/css" href="css/reset.css">
+	<link rel="stylesheet" type="text/css" href="css/type.css">
+	<link rel="stylesheet" type="text/css" href="css/styles.css">
+	<link rel="stylesheet" type="text/css" href="css/verksamhet_style.css">
+
 </head>
 <body>
-	<header>
-		<div class="container">
+	<header class="container-fluid" role="banner">
+		<div class="container-fluid top">
 			<a href="#">
 				<h1>MYh - Myndigheten för yrkeshögskolan</h1>
 				<img src="https://www.myh.se/assets/images/myh_logo.png" width="150" alt="MYhs Logotyp" />
 			</a>
-			<nav>
+			<nav role="navigation">
 				<button class="burger"></button>
-				<ul>
+				<ul class="menu">
 					<li><a href="#">Start</a></li>
 					<li><a href="#">Om oss</a></li>
 					<li>
 						<a href="#">Verksamhetsområden</a>
-						<ul>
+						<ul class="dropdown__content">
 							<li><a href="#">Yrkeshögskolan</a></li>
 							<li><a href="#">Konst- och kulturutbildningar</a></li>
 							<li><a href="#">Tolkutbildningar</a></li>
@@ -38,57 +43,88 @@
 
 				</ul>
 			</nav>
+			<form type="text" class="input">
+				<input class="input__search" type="text" name="search" placeholder="Sök..">
+			</form>
+		</div>
+		<div class="container-fluid dark">
+			<div class="container">
+				<ul class="submenu">
+					<li><a href="#">Ansök om att bedriva utbildning</a></li>
+					<li><a href="#">För dig som bedriver utbildning</a></li>
+					<li><a href="#">Företag och organisationer</a></li>
+				</ul>
+			</div>
 		</div>
 	</header>
-	<main class="container">
-
-		<section class="row">
-  <article class="col-12 col--left"><h2><p>Verksamhetsområden
-</h2>Myndigheten för yrkeshögskolan har i uppdrag att ansvara för frågor som rör utbildningar inom yrkeshögskolan. Dessutom ansvarar vi för ytterligare frågor inom utbildningsområdet.</p></article>
+	<main>
+		<section class="row mainlinks">
+    <article class="col-12">
+      <h1>Verksamhetsområden</h1>
+    </article>
 </section>
 
-<section class="container">
-  <section class="row">
-    <article class="col-4">
-      <figure><img src="http://via.placeholder.com/150x150"><figcaption><h3>Yrkeshögskolan</h3>Yrkeshögskolans utbildningar svarar mot ett verkligt behov på arbetsmarknaden och drivs i nära samarbete med arbetslivet.</figcaption></figure>
-    </article>
-    
-      <article class="col-4">
-      <figure><img src="http://via.placeholder.com/150x150"><figcaption><h3>Konst- och kulturutbildningar</h3>Konst- och kulturutbildningar är en ny eftergymnasial utbildningsform i Sverige. De första utbildningarna startade hösten 2015.</figcaption></figure>
-    </article>
-      <article class="col-4">
-      <figure><img src="http://via.placeholder.com/150x150"><figcaption><h3>Tolkutbildningar</h3>Folkhögskolan och studieförbunden utbildar tolkar för döva, hörselskadade och för personer som inte behärskar svenska.</figcaption></figure>
-    </article>
-    
-  </section>
+<section class="container shadow">
 
-  <!--START OF SECOND ROW-->
+<section class="row mainlinks"> 
+  <article class="col-6">
+    <img src="http://via.placeholder.com/120x120" class="image--circle"><br>
+    <a href="#" class="a--red"><h3>Yrkeshögskolan</h3></a>
+    <p>Yrkeshögskolans utbildningar svarar mot ett verkligt behov på arbetsmarknaden och drivs i nära samarbete med arbetslivet.</p>
+  </article>
+  <aricle class="col-6">
+    <img src="http://via.placeholder.com/120x120" class="image--circle"><br>
+    <a href="#" class="a--red"><h3>Konst- och kulturutbildningar</h3></a>
+    <p>Konst- och kulturutbildningar är en ny eftergymnasial utbildningsform i Sverige. De första utbildningarna startade hösten 2015.
+</p>
+  </aricle>
+</section>
 
- <section class="row">
-    <article class="col-3">
-      <figure><img src="http://via.placeholder.com/150x150"><figcaption><h3>Utbildningar med endast tillsyn</h3>Vissa eftergymnasiala utbildningar som bedrivs av fristående skolor står under statlig tillsyn med MYH som tillsynsmyndighet.
-</figcaption></figure>
-    </article>
-    
-      <article class="col-3">
-      <figure><img src="http://via.placeholder.com/150x150"><figcaption><h3>SeQF</h3>Med Sveriges referensram för kvalifikationer (SeQF) synliggörs allt lärande för att öka matchningen på arbetsmarknaden.</figcaption></figure>
-    </article>
-      <article class="col-3">
-      <figure><img src="http://via.placeholder.com/150x150"><figcaption><h3>Branschvalidering</h3>Branschvalidering är validering av individers kompetens som genomförs i branschernas regi.</figcaption></figure>
-    </article>
-   <article class="col-3">
-      <figure><img src="http://via.placeholder.com/150x150"><figcaption><h3>Kompletterande utbildningar</h3>Utbildningsformen kompletterande utbildningar håller på att fasas ut. Merparten av utbildningarna drivs nu vidare enligt andra regelverk.</figcaption></figure>
-    </article>
-    
-  </section>
-  
-  
+<section class="row mainlinks">
+  <article class="col-6">
+    <img src="http://via.placeholder.com/120x120" class="image--circle"><br>
+    <a href="#" class="a--red"><h3>Tolkutbildningar</h3></a>
+    <p>Folkhögskolan och studieförbunden utbildar tolkar för döva, hörselskadade och för personer som inte behärskar svenska.
+</p>
+  </article>
+  <article class="col-6">
+    <img src="http://via.placeholder.com/120x120" class="image--circle"><br>
+    <a href="#" class="a--red"><h3>Utbildningar med endast tillsyn</h3></a>
+    <p>Vissa eftergymnasiala utbildningar som bedrivs av fristående skolor står under statlig tillsyn med MYH som tillsynsmyndighet.</p>
+  </article>
+</section>
+
+<section class="row mainlinks">
+  <article class="col-6">
+    <img src="http://via.placeholder.com/120x120" class="image--circle"><br>
+    <a href="#" class="a--red"><h3>SeQF</h3></a>
+    <p>Med Sveriges referensram för kvalifikationer (SeQF) synliggörs allt lärande för att öka matchningen på arbetsmarknaden.
+</p>
+  </article>
+  <article class="col-6">
+    <img src="http://via.placeholder.com/120x120" class="image--circle"><br>
+    <a href="#" class="a--red"><h3>Branschvalidering</h3></a>
+    <p>Yrkeshögskolans utbildningar svarar mot ett verkligt behov på arbetsmarknaden och drivs i nära samarbete med arbetslivet.</p>
+  </article>
+</section>
+
+<section class="row mainlinks">
+  <article class="col-6">
+    <img src="http://via.placeholder.com/120x120" class="image--circle"><br>
+    <a href="#" class="a--red"><h3>Kompletterande utbildningar</h3></a>
+    <p>Utbildningsformen kompletterande utbildningar håller på att fasas ut. Merparten av utbildningarna drivs nu vidare enligt andra regelverk.</p>
+  </article>
+
+  <article class="col-6">
+  </article>
+</section>
+
 </section>
 	</main>
-	<footer>
+	<footer role="footer">
 		<div class="container">
-			<section class="row">
-				<section class="col-3">
+			<section class="row h-centered">
+				<section class="col-none">
 					<h3>Kontakt</h3>
 					<h4>Telefon</h4>
 					<p>
@@ -98,9 +134,9 @@
 					</p>
 					<h4>E-post</h4>
 					<p>
-						Allmänna frågor/synpunkter: <a href="mailto:info@myh.se">info@myh.se</a>
+						Allmänna frågor/synpunkter: <a class="email" href="mailto:info@myh.se">info@myh.se</a>
 						<br>
-						Registrator: <a href="mailto:registrator@myh.se">registrator@myh.se</a>
+						Registrator: <a class="url" href="mailto:registrator@myh.se">registrator@myh.se</a>
 					</p>
 					<h4>Adress</h4>
 					<p>
@@ -111,7 +147,7 @@
 						721 05 Västerås
 					</p>
 				</section>
-				<section class="col-3">
+				<section class="col-none">
 					<h3>Om webbplatsen</h3>
 					<ul>
 						<li>
@@ -125,7 +161,7 @@
 						</li>
 					</ul>
 
-					<h3></h3>
+					<h3>Våra övriga webbplatser</h3>
 					<ul>
 						<li>
 							<a href="#" title="Yrkeshögskolans webbplats">www.yrkeshogskolan.se</a>
@@ -144,7 +180,7 @@
 						</li>
 					</ul>
 				</section>
-				<section class="col-3">
+				<section class="col-none">
 					<h3>Gå direkt till</h3>
 					<ul>
 						<li>
@@ -179,7 +215,7 @@
 						<a href="#" title="EPALE">EPALE</a>
 					</p>
 				</section>
-				<section class="col-3">
+				<section class="col-none">
 					<h3>Håll dig uppdaterad</h3>
 					<ul>
 						<li>
