@@ -80,7 +80,7 @@
 @media all and (max-width: 640px) {
 
     .row { 
-        flex-direction: column; 
+        flex-direction: column;     
     }
 
     [class^="col"] { 
