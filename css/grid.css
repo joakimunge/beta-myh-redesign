@@ -12,7 +12,7 @@
 */
 
 :root {
-    --col-margin: 20px;
+    --col-margin: 4px;
     --col-padding: 20px;
     --col-min-height: 40px;
 }
@@ -22,8 +22,13 @@
     could be fluid (full-width too)
 */
 .container {
-  max-width: 1170px;
+  max-width: 960px;
   margin: 0 auto;
+}
+
+.container-fluid {
+  min-width: 100%;
+  margin:0 auto;
 }
 
 /* the basis of the grid */
@@ -33,7 +38,7 @@
 
 /* temporary in order to show a different background colour for nested rows/cols */
 [class^="col"] > .row > [class^="col"] {
-  background: #333;
+  background: #fff;
   color: white;
 }
 
@@ -71,10 +76,10 @@
 *****************/
 
 .h-end      { display: flex; justify-content: flex-end;} /* horizontally justify content within its container to the end */
-.h-centred  { display: flex; justify-content: center; } /* horizontally centred */
-.v-centred  { display: flex; align-items: center; }  /* vertically centred */
-.centred { display: flex; justify-content: center; align-items: center; } /* horizontally & vertically centred */
-
+.v-end      { display: flex; flex-direction: column; justify-content: flex-end;} /* vertically justify content within its container to the end */
+.h-centered  { display: flex; justify-content: center; } /* horizontally centred */
+.v-centered  { display: flex; align-items: center; }  /* vertically centred */
+.centered { display: flex; justify-content: center; align-items: center; } /* horizontally & vertically centred */
 /* media queries */
 @media all and (max-width: 640px) {
 

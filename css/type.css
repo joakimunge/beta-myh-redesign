@@ -1,0 +1,90 @@
+		/* ------- Font Import ------- */
+
+		@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800');
+
+		/* 
+		Font-base: 14;
+		line-height-base: 23;
+		*/
+
+		html {
+			font-size: 62.5%;
+			font-family: 'Open Sans', 'Helvetica', 'Arial', sans-serif;
+		}
+
+		body {
+			font-size: 1.4rem; /* 14px */
+		}
+
+		.dark {
+			color:#F6F7EB;
+			background-color:#393E41;
+		}
+
+		.dark a {
+			color:#F6F7EB;
+		}
+
+		.dark a:hover {
+			color:#E94F37;
+
+		}
+
+		.light {
+			color:#393E41;
+			background-color: #F6F7EB;
+
+		}
+
+		h1 {
+			font-size: 3.8rem; /* 38px */
+			line-height: 1;
+			font-weight:700;
+			margin-bottom:3.8rem;
+
+		}
+
+		h2 {
+			font-size: 2.4rem; /* 24px */
+			line-height: 1.2;
+			font-weight:700;
+			margin-bottom:1.6rem;
+		}
+
+		h3 {
+			font-size: 1.8rem; /* 18px */
+			line-height:1.2;
+			font-weight:700;
+			margin-bottom:1.4rem;
+		}
+
+		h4 {
+			font-size:1.6rem; /* 16px */
+			line-height: 1.2;
+			font-weight:600;
+			margin-bottom:0.8rem;
+		}
+
+		h5 {
+			font-size:1.4rem; /* 14px */
+			font-weight:600;
+		}
+
+		p {
+			font-size: 1.4rem; /* 14px */
+			line-height: 1.2;
+			margin-bottom: 1.2rem;
+		}
+
+		p:last-child {
+			margin-bottom: 0;
+		}
+
+		time {
+			font-size: 1.0rem; /* 10px */
+			line-height: 1.2;
+		}
+
+		.lead {
+			font-size: 1.8rem;
+		}
