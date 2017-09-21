@@ -21,6 +21,7 @@
   padding: 15px;
   background: var(--contrast-color);
   color: white;
+  margin-bottom: 0;
 }
 .sidenav--title:first-child {
   border-top-left-radius: 3px;
