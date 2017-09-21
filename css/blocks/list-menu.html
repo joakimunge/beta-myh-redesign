@@ -42,22 +42,22 @@
     <!-- <h1 style="flex-basis: 100%; text-align: center; font-size: 48px;">.list-menu</h1> -->
 
     <nav class="col-12 sidenav">
-            <h3 class="sidenav--title">Heading</h3>
+            <h3 class="sidenav--title">.sidenav--title</h3>
 
             <ul class="list-menu">
                 <li class="list-menu--item">
                     <a class="list-menu-item--link" href="#" title="Alla publikationer">
-                        One
+                        .list-menu-item--link
                         <span class="list-menu-item-link--span">1</span>
                     </a>
                 </li>
             </ul>
 
-            <h4 class="sidenav--title">Heading Two</h4>
+            <h4 class="sidenav--title">.sidenav--title</h4>
 
             <ul class="list-menu">
                 <li class="list-menu--item">
-                    <a class="list-menu-item--link" href="#" title="Alla publikationstyper">One</a>
+                    <a class="list-menu-item--link" href="#" title="Alla publikationstyper">.list-menu-item--link</a>
                 </li>
                 <li class="list-menu--item">
                     <a class="list-menu-item--link" href="#" title="Rapporter">
@@ -67,7 +67,7 @@
                 </li>
                 <li class="list-menu--item">
                     <a class="list-menu-item--link" href="#" title="Återrapporteringar">
-                        Three
+                        .list-menu-item--link
                         <span class="list-menu-item-link--span">123</span>
                     </a>
                 </li>
@@ -87,6 +87,7 @@
                 
                 <li class="list-menu--item">
                     <a class="list-menu-item--link list-menu-item--link__has-sub" href="#">Two</a>
+
                     <ul class="list-menu list-menu--submenu">
                         <li class="list-menu--item list-menu--item__sub">
                             <a class="list-menu-item--link list-menu-item--sublink" href="#">Two – One</a>
@@ -99,15 +100,18 @@
                 </li>
 
                 <li class="list-menu--item">
-                    <a class="list-menu-item--link" href="#">Four</a>
+                    <a class="list-menu-item--link list-menu-item--link__has-sub" href="#">.list-menu-item--link .list-menu-item--link__has-sub</a>
+
                     <ul class="list-menu list-menu--submenu">
                         <li>
-                            <a class="list-menu-item--link list-menu-item--sublink"  href="#">Four - One</a>
+                            <a class="list-menu-item--link list-menu-item--sublink"  href="#">.list-menu-item--link .list-menu-item--sublink</a>
                         </li>
                     </ul>
                 </li>
 
-                <li class="list-menu--item"><a class="list-menu-item--link" href="#">Five</a>
+                <li class="list-menu--item">
+                    <a class="list-menu-item--link list-menu-item--link__has-sub" href="#">Five</a>
+
                     <ul class="list-menu list-menu--submenu">
                         <li class="list-menu--item list-menu--item__sub">
                             <a class="list-menu-item--link list-menu-item--sublink"  href="#">Five – One</a>
@@ -124,7 +128,9 @@
                     </ul>
                 </li>
 
-                <li class="list-menu--item"><a class="list-menu-item--link" href="#">Anmäl brister i en utbildning</a>
+                <li class="list-menu--item">
+                    <a class="list-menu-item--link list-menu-item--link__has-sub" href="#">Anmäl brister i en utbildning</a>
+
                     <ul class="list-menu list-menu--submenu">
                         <li class="list-menu--item list-menu--item__sub">
                             <a class="list-menu-item--link list-menu-item--sublink" href="#">Skicka in en anmälan</a>
@@ -140,15 +146,15 @@
 
     subMenus.forEach(function(subMenu) { 
     
-    subMenu.previousElementSibling.addEventListener('click', function(e) {
-        e.preventDefault();
-        
-        subMenu.previousElementSibling.classList.toggle('list-menu-item--link__active');
-        
-        subMenu.style.maxHeight 
-        ? subMenu.style.maxHeight = null 
-        : subMenu.style.maxHeight = subMenu.scrollHeight + "px";
-    });
+        subMenu.previousElementSibling.addEventListener('click', function(e) {
+            e.preventDefault();
+            
+            subMenu.previousElementSibling.classList.toggle('list-menu-item--link__active');
+            
+            subMenu.style.maxHeight 
+            ? subMenu.style.maxHeight = null 
+            : subMenu.style.maxHeight = subMenu.scrollHeight + "px";
+        });
     
     });
 </script>
