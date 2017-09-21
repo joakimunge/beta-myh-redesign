@@ -7,6 +7,11 @@ a {
     align-items: flex-start;
 }
 
+.sticky-sidenav {
+    position: sticky;
+    top: 20px;
+}
+
 /* Test */
 :root {
     --contrast-color: slateblue;*/
