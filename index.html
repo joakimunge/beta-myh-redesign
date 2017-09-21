@@ -3,7 +3,7 @@
 <head>
 	<title>Beta - MYH.SE - Page Skeleton</title>
 	<meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1.0">
-
+	<link rel="stylesheet" href="assets/font/fontawesome/css/font-awesome.min.css">
 	<link rel="stylesheet" type="text/css" href="css/grid.css">
 	<link rel="stylesheet" type="text/css" href="css/reset.css">
 	<link rel="stylesheet" type="text/css" href="css/type.css">
@@ -21,7 +21,7 @@
 				<ul class="menu">
 					<li><a href="#">Start</a></li>
 					<li><a href="#">Om oss</a></li>
-					<li>
+					<li class="dropdown">
 						<a href="#">Verksamhetsområden</a>
 						<ul class="dropdown__content">
 							<li><a href="#">Yrkeshögskolan</a></li>
@@ -48,17 +48,17 @@
 		<div class="container-fluid dark">
 			<div class="container">
 				<ul class="submenu">
-					<li><a href="#">Ansök om att bedriva utbildning</a></li>
-					<li><a href="#">För dig som bedriver utbildning</a></li>
-					<li><a href="#">Företag och organisationer</a></li>
+					<li><a href="#"><i class="fa fa-pencil-square fa-2x" aria-hidden="true"></i>Ansök om att bedriva utbildning</a></li>
+					<li><a href="#"><i class="fa fa-id-card fa-2x" aria-hidden="true"></i>För dig som bedriver utbildning</a></li>
+					<li><a href="#"><i class="fa fa-users fa-2x" aria-hidden="true"></i>Företag och organisationer</a></li>
 				</ul>
 			</div>
 		</div>
 	</header>
 	<main>
 		<div class="container">
-			<section class="row newsblock">
-				<article id="selected__item" class="col-8 v-end dark overlay--dark" role="listbox"> <!-- listbox is for accessability to show this is a carousel. role="option" will be used for each slide -->
+			<section class="row block">
+				<article id="selected__item" class="col-8 v-end dark overlay--dark"> <!-- listbox is for accessability to show this is a carousel. role="option" will be used for each slide -->
 						<header>
 							<h2>Konferens om yrkeshögskola - 11 Oktober</h2>
 						</header>
@@ -67,19 +67,19 @@
 							<p><time>6 september, 2017</time></p>
 						</footer>
 				</article>
-				<aside class="col-4 v-end light">
+				<aside id="calendar" class="col-4 v-end light">
 					<header>
 						<p>Nästkommande händelse</p>
 						<h2><time>25 september</time></h2>
 					</header>
-						<h4>YH-Seminarium i Stockholm för arbetsgivare.</h4>
+						
 					<footer>
-						<p><time>6 september, 2017</time></p>
+						<h3>YH-Seminarium i Stockholm för arbetsgivare.</h3>
 						<p><a href="#">Se hela kalendern</a></p>
 					</footer>
 				</aside>
 			</section>
-			<section class="row newsblock">
+			<section class="row block">
 					<article id="first" class="col-12 v-end dark overlay--dark">
 						<header>
 							<h2>Största satsningen någonsin kräver gemensam ansträngning</h2>
@@ -90,7 +90,7 @@
 						</footer>
 					</article>
 				</section>
-			<section class="row newsblock">
+			<section class="row block">
 				<article id="second" class="col-4 v-end dark overlay--dark">
 					<header>
 						<h2>Tack för inskickade ansökningar om att bedriva YH-utbildning</h2>
@@ -111,13 +111,13 @@
 				</article>
 			</section>
 			<section class="row">
-				<div class="col-8 storyblock">
+				<div class="col-8 news">
 					<div class="row">
 						<div class="col-4">
-							<img src="http://via.placeholder.com/150x150">
+							<img class="news__img" src="http://via.placeholder.com/150x150">
 						</div>
 						<div class="col-8">
-							<article class="story">
+							<article class="news__story">
 								<h3>Test Header - Pretend Article</h3>
 								<p><time>6 september, 14:07</time></p>
 								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin sit amet risus ex. Pellentesque lacinia orci eu mi pellentesque, sit amet lacinia lectus luctus. Nam laoreet condimentum orci nec auctor.</p>
@@ -126,10 +126,10 @@
 					</div>
 					<div class="row">
 						<div class="col-4">
-							<img src="http://via.placeholder.com/150x150">
+							<img class="news__img" src="http://via.placeholder.com/150x150">
 						</div>
 						<div class="col-8">
-							<article class="story">
+							<article class="news__story">
 								<h3>Test Header - Pretend Article</h3>
 								<p><time>6 september, 14:07</time></p>
 								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin sit amet risus ex. Pellentesque lacinia orci eu mi pellentesque, sit amet lacinia lectus luctus. Nam laoreet condimentum orci nec auctor.</p>
@@ -138,10 +138,10 @@
 					</div>
 					<div class="row">
 						<div class="col-4">
-							<img src="http://via.placeholder.com/150x150">
+							<img class="news__img" src="http://via.placeholder.com/150x150">
 						</div>
 						<div class="col-8">
-							<article class="story">
+							<article class="news__story">
 								<h3>Test Header - Pretend Article</h3>
 								<p><time>6 september, 14:07</time></p>
 								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin sit amet risus ex. Pellentesque lacinia orci eu mi pellentesque, sit amet lacinia lectus luctus. Nam laoreet condimentum orci nec auctor.</p>
@@ -149,20 +149,20 @@
 						</div>
 					</div>
 				</div>
-				<div class="col-4 storyblock">
-					<article class="story">
+				<div class="col-4 news">
+					<article class="news__story">
 						<h4>Another article - Smaller?</h4>
 						<p><time>6 september, 14:07</time></p>
 						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin sit amet risus ex. Pellentesque lacinia orci eu mi pellentesqu.</p>
 					</article>
 
-					<article class="story">
+					<article class="news__story">
 						<h4>Another article - Smaller?</h4>
 						<p><time>6 september, 14:07</time></p>
 						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin sit amet risus ex. Pellentesque lacinia orci eu mi pellentesqu.</p>
 					</article>
 
-					<article class="story">
+					<article class="news__story">
 						<h4>Another article - Smaller?</h4>
 						<p><time>6 september, 14:07</time></p>
 						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin sit amet risus ex. Pellentesque lacinia orci eu mi pellentesqu.</p>
@@ -171,7 +171,7 @@
 			</section>
 		</div>
 	</main>
-	<footer role="footer">
+	<footer role="footer" class="dark">
 		<div class="container">
 			<section class="row h-centered">
 				<section class="col-none">
