@@ -38,8 +38,6 @@
 
 /* temporary in order to show a different background colour for nested rows/cols */
 [class^="col"] > .row > [class^="col"] {
-  background: #fff;
-  color: white;
 }
 
 /* every class that start with "col" */
@@ -80,7 +78,10 @@
 .h-centered  { display: flex; justify-content: center; } /* horizontally centred */
 .v-centered  { display: flex; align-items: center; }  /* vertically centred */
 .centered { display: flex; justify-content: center; align-items: center; } /* horizontally & vertically centred */
+.col--nested { padding:0; } /* remove extra padding from nested columns to prevent stacking - Apply to outer column*/
+
 /* media queries */
+
 @media all and (max-width: 640px) {
 
     .row { 

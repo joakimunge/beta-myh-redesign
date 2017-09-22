@@ -17,6 +17,7 @@
 		}
 
 		a {
+			text-decoration: none;
 			transition: all 0.3s ease-out;
 			-webkit-transition: all 0.3s ease-out;
 			-moz-transition: all 0.3s ease-out;
@@ -47,12 +48,31 @@
 		}
 
 		.light a {
-			color:#E94F37;
+			color: #E94F37;
 		}
 
 		.light a:hover {
 			opacity:0.5;
 		}
+
+		.white {
+			color:#393E41;
+			background-color:#FFF;
+		}
+
+		.white a {
+			color:#E94F37;
+		}
+
+		.white a > h3, .white a > h4 {
+			color:#393E41;
+		}
+
+		.white a > h3:hover, .white a > h4:hover {
+			color:#E94F37;
+		}
+
+
 
 
 		h1 {
@@ -102,5 +122,10 @@
 		p > time {
 			font-size: 1.0rem; /* 10px */
 			line-height: 1.2;
+		}
+
+		p > a {
+			text-decoration: none;
+			font-weight: 600;
 		}
 
