@@ -5,11 +5,13 @@ a {
 
 .main-content {
     align-items: flex-start;
+    margin: 20px auto;
 }
 
 .sticky-sidenav {
     position: sticky;
     top: 20px;
+    padding-top: 0;
 }
 
 /* Test */
@@ -25,6 +27,7 @@ a {
   
   .sidenav {
     border-radius: 3px;
+    padding: 0;
   }
   
   .sidenav--title {
