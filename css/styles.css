@@ -14,6 +14,53 @@ body {
 	background-color: rgba(92,65,93,0.0);
 }
 
+/* - Color Behaviours - */
+
+.dark {
+	color:#F6F7EB;
+	background-color:#393E41;
+}
+
+.dark a {
+	color:#F6F7EB;	
+}
+
+.dark a:hover {
+	color:#E94F37;
+
+}
+
+.light {
+	color:#393E41;
+	background-color: #F6F7EB;
+}
+
+.light a {
+	color: #E94F37;
+}
+
+.light a:hover {
+	opacity:0.5;
+}
+
+.white {
+	color:#393E41;
+	background-color:#FFF;
+}
+
+.white a {
+	color:#E94F37;
+}
+
+.white a > h3, .white a > h4 {
+	color:#393E41;
+}
+
+.white a > h3:hover, .white a > h4:hover {
+	color:#E94F37;
+}
+
+
 /* ------- Header & Navigation ------- */
 
 header[role=banner] {
@@ -46,6 +93,10 @@ header[role=banner] button.burger {
 	background: url('../assets/img/search_12x12.png') no-repeat 11px 7px;
 	border-radius: 15px;
 	border:2px solid #C7C7C7;
+	transition: all 0.3s ease-out;
+	-webkit-transition: all 0.3s ease-out;
+	-moz-transition: all 0.3s ease-out;
+	-o-transition: all 0.3s ease-out;
 }
 
 .input__search:focus {
@@ -143,9 +194,10 @@ main {
 }
 
 .news {
-	box-shadow: 0px 1px 7px rgba(0,0,0,0.1);
+	box-shadow: 0px 2px 6px rgba(0,0,0,0.1);
 	background-color: #FFF;
 	border-top: 4px solid #E94F37;
+	margin:25px 25px 0 0;
 }
 
 .news__story {
@@ -155,8 +207,14 @@ main {
 .news__story p {
 	overflow: hidden;
   	display: -webkit-box;
+  	line-clamp: 3;
   	-webkit-line-clamp: 3;
+  	-moz-line-clamp: 3;
+  	-o-line-clamp: 3;
+  	box-orient: vertical;
   	-webkit-box-orient:vertical;
+  	-moz-box-orient: vertical;
+  	-o-box-orient: vertical;
 }
 
 .news__story p > a {
@@ -224,6 +282,12 @@ aside#calendar {
 	justify-content: space-between;
 }
 
+/* ------- Misc ------- */
+
+.fa { /* Icons */
+	padding-right:1rem;
+}
+
 
 /* ------- Footer ------- */
 
@@ -245,13 +309,19 @@ footer p,a {
 	line-height: 1.4rem;
 }
 
-footer h3 {
+footer[role=footer]  h3 {
+	display:inline-block;
 	margin-top:1.2rem;
+	border-bottom:4px solid #E94F37;
+	padding-bottom:0.6rem;
+}
+
+footer ul.social {
+	margin-bottom:1.2rem;
 }
 
 footer ul.social li {
 	display:inline-block;
-	margin-bottom:0.8rem;
 }
 /* ------- Media Queries ------- */
 
