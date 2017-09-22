@@ -8,13 +8,12 @@ a {
     margin: 20px auto;
 }
 
-.sticky-sidenav {
-    position: sticky;
-    top: 20px;
-    padding-top: 0;
+i {
+  margin-right: 10px;
+  
 }
 
-/* Test */
+/* Sidenav */
 :root {
     --contrast-color: slateblue;*/
     --list-item-bg: #f7f7f7;
@@ -25,6 +24,12 @@ a {
     --border-color-sub: #dadada;
   }
   
+  .sticky-sidenav {
+    position: sticky;
+    top: 20px;
+    padding-top: 0;
+  }
+
   .sidenav {
     border-radius: 3px;
     padding: 0;
