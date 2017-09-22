@@ -21,6 +21,7 @@
     it helps to set some kind of base width for media queries and more
     could be fluid (full-width too)
 */
+
 .container {
   max-width: 960px;
   margin: 0 auto;
@@ -29,6 +30,10 @@
 .container-fluid {
   min-width: 100%;
   margin:0 auto;
+}
+
+.main-content {
+  margin: 20px auto;
 }
 
 /* the basis of the grid */
