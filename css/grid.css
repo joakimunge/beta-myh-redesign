@@ -36,11 +36,11 @@
   display: flex;
 }
 
-/* temporary in order to show a different background colour for nested rows/cols */
+/* temporary in order to show a different background colour for nested rows/cols
 [class^="col"] > .row > [class^="col"] {
   background: #fff;
   color: white;
-}
+}*/
 
 /* every class that start with "col" */
 [class^="col"] {

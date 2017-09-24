@@ -1,5 +1,5 @@
   
-.mainlinks{
+.row--centered{
   display: flex;
   flex-direction: row;
   text-align: center;
@@ -14,6 +14,13 @@
 	margin: 5%;
 }
 
+.row--parallax{
+	background-image: url("http://www.publicdomainpictures.net/pictures/130000/velka/gray-gradient-background-1440541572Qcf.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-attachment: fixed;
+}
+
 .a--red{
 	color: #393E41;
 	text-decoration-color: #E94F37; 
@@ -21,4 +28,8 @@
 
 .a--red:hover{
 	color: #E94F37;
+}
+
+p--light{
+	color: black;
 }
