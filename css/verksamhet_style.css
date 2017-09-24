@@ -47,4 +47,10 @@ p--light{
 	h1{
 		font-size: 150%;
 	}
+	.col-6{
+		border-bottom: 1px solid #393E41
+	}
+	.col-6:last-child{
+		border-bottom: none;
+	}
 }
