@@ -16,10 +16,19 @@
 }
 
 .row--parallax{
-	background-image: url("http://www.publicdomainpictures.net/pictures/130000/velka/gray-gradient-background-1440541572Qcf.jpg");
+	/*http://www.publicdomainpictures.net/pictures/130000/velka/gray-gradient-background-1440541572Qcf.jpg*/
+	background-image: url('https://cdn.pixabay.com/photo/2016/03/15/02/42/floor-1256804_960_720.jpg');
 	background-size: cover;
 	background-attachment: fixed;
+	opacity: .8;
 }
+
+
+.col-12 h1{
+	color: #F6F7EB;
+	margin-bottom: 0;
+}
+
 
 .a--red{
 	color: #393E41;
@@ -30,13 +39,9 @@
 	color: #E94F37;
 }
 
-p--light{
-	color: black;
-}
-
 /* ------- Media Queries -------*/
 
-@media only screen and (max-width: 500px){
+@media only screen and (max-width: 640px){
 	.row{
 		flex-direction: column;
 	}
@@ -44,7 +49,7 @@ p--light{
 		height: 50px;
 	}
 	h1{
-		font-size: 150%;
+		font-size: 100%;
 	}
 	.col-6{
 		bottom-top: 1px solid #393E41;
