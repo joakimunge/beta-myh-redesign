@@ -16,29 +16,12 @@
 			font-size: 1.4rem; /* 14px */
 		}
 
-		.lead {
-			font-size: 1.8rem;
-			margin-top: 1rem;
-		}
-
-		.dark {
-			color:#F6F7EB;
-			background-color:#393E41;
-		}
-
-		.dark a {
-			color:#F6F7EB;
-		}
-
-		.dark a:hover {
-			color:#E94F37;
-
-		}
-
-		.light {
-			color:#393E41;
-			background-color: #F6F7EB;
-
+		a {
+			text-decoration: none;
+			transition: all 0.3s ease-out;
+			-webkit-transition: all 0.3s ease-out;
+			-moz-transition: all 0.3s ease-out;
+			-o-transition: all 0.3s ease-out;
 		}
 
 		h1 {
@@ -73,6 +56,8 @@
 		h5 {
 			font-size:1.4rem; /* 14px */
 			font-weight:600;
+			line-height: 1.2;
+			margin-bottom:0.8rem;
 		}
 
 		p {
@@ -85,8 +70,13 @@
 			margin-bottom: 0;
 		}
 
-		time {
+		p > time {
 			font-size: 1.0rem; /* 10px */
 			line-height: 1.2;
+		}
+
+		p > a {
+			text-decoration: none;
+			font-weight: 600;
 		}
 

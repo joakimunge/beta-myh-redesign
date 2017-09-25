@@ -9,7 +9,7 @@
 }
 
 .sidenav {
-  position: static;
+  /*position: static;*/
   top: 20px;
   padding-top: 0;
 }
@@ -73,9 +73,16 @@ a.list-menu-item--link__active .list-menu--submenu {
   border-left: 5px #E94F37 solid;
 }
 
-.list-menu-item--link__has-sub {
-  
+/*.list-menu-item--link__has-sub:after {
+  content: "V";
+  justify-content: right;
 }
+
+.list-menu-item--link__has-sub:active {
+  content: "V";
+  transition: ;
+  rotate: 90;
+}*/
 
 .list-menu-item--link__active {
   /*background-color: var(--list-item-h-bg-sub);*/
@@ -87,7 +94,7 @@ a.list-menu-item--link__active .list-menu--submenu {
   background: var(--list-item-bg-sub); 
 }
 .list-menu-item--sublink:hover {
-  background: var(--list-item-h-bg-sub); 
+  background: var(--list-item-h-bg-sub);
 }
 
 .list-menu-subitem--sublink {

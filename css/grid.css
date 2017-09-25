@@ -21,7 +21,6 @@
     it helps to set some kind of base width for media queries and more
     could be fluid (full-width too)
 */
-
 .container {
   max-width: 960px;
   margin: 0 auto;
@@ -32,20 +31,15 @@
   margin:0 auto;
 }
 
-.main-content {
-  margin: 20px auto;
-}
-
 /* the basis of the grid */
 .row {
   display: flex;
 }
 
 /* temporary in order to show a different background colour for nested rows/cols */
-/*[class^="col"] > .row > [class^="col"] {
-  background: #fff;
-  color: white;
-}*/
+[class^="col"] > .row > [class^="col"] {
+  padding-left: 0;
+}
 
 /* every class that start with "col" */
 [class^="col"] {
@@ -85,7 +79,10 @@
 .h-centered  { display: flex; justify-content: center; } /* horizontally centred */
 .v-centered  { display: flex; align-items: center; }  /* vertically centred */
 .centered { display: flex; justify-content: center; align-items: center; } /* horizontally & vertically centred */
+.col--nested { padding:0; } /* remove extra padding from nested columns to prevent stacking - Apply to outer column*/
+
 /* media queries */
+
 @media all and (max-width: 640px) {
 
     .row { 

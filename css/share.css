@@ -1,0 +1,16 @@
+.share-list {
+  display: flex;
+  flex-direction: row;
+}
+
+.share-item a {
+  color: #393E41;  
+}
+
+.share-item a:hover {
+  color: #E94F37;
+}
+
+.share-item i {
+  font-size: 3rem;
+}
