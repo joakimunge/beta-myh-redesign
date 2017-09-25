@@ -81,7 +81,7 @@
 		font-family: 'FontAwesome';
 		content: '\f107';
 		position: absolute;
-		right: 15px;
+		right: 32px;
 		font-weight: 500;
 	}
 
@@ -127,4 +127,13 @@
 
 	.sidenav__link-lv3 {
 		padding-left: 96px;
+	}
+
+	.sidenav__span {
+		line-height: 1;
+		float: right;
+		padding: 4px 6px;
+		border-radius: 3px;
+		background: #e94f37;
+		color: white;
 	}
