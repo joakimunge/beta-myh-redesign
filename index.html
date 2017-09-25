@@ -12,12 +12,15 @@
 <body>
 	<header class="container-fluid" role="banner">
 		<div class="container-fluid top">
-			<a href="#">
-				<h1>MYh - Myndigheten för yrkeshögskolan</h1>
-				<img src="https://www.myh.se/assets/images/myh_logo.png" width="150" alt="MYhs Logotyp" />
-			</a>
+			<div class="logo">
+				<a href="#">
+					<h1>MYh - Myndigheten för yrkeshögskolan</h1>
+					<img id="lg" src="assets/img/yh.png" alt="MYhs Logotyp" />
+					<img id="sm" src="assets/img/yh_staende.png" alt="MYG Logotyp">
+				</a>
+			</div>
 			<nav role="navigation">
-				<button class="burger"></button>
+				<button class="burger"><i class="fa fa-bars fa-2x" aria-hidden="true"></i></button>
 				<ul class="menu">
 					<li><a href="#">Start</a></li>
 					<li><a href="#">Om oss</a></li>
@@ -38,12 +41,22 @@
 					<li><a href="#">Publikationer</a></li>
 					<li><a href="#">Nyhetsrum</a></li>
 					<li><a href="#">Kontakt</a></li>
-
+					<li class="dropdown">
+						<a href="#"><i class="fa fa-user-circle-o fa-2x" aria-hidden="true"></i></a>
+						<ul class="dropdown__content">
+							<form type="text" class="input">
+								<input type="text" name="username" placeholder="Användarnamn">
+								<input type="text" name="password" placeholder="Lösenord">
+							</form>
+						</ul>
+					</li>
+					<li class="v-centered">
+						<form type="text" class="input">
+							<input class="input__search" type="text" name="search" placeholder="Sök..">
+						</form>	
+					</li>
 				</ul>
 			</nav>
-			<form type="text" class="input">
-				<input class="input__search" type="text" name="search" placeholder="Sök..">
-			</form>
 		</div>
 		<div class="container-fluid dark">
 			<div class="container">
@@ -55,7 +68,7 @@
 			</div>
 		</div>
 	</header>
-	<main>
+	<main role="main">
 		<div class="container">
 			<section class="row block">
 				<article id="selected__item" class="col-8 v-end dark overlay--dark"> <!-- listbox is for accessability to show this is a carousel. role="option" will be used for each slide -->
