@@ -1,0 +1,130 @@
+.sidenav {
+	width: 540px;
+	border-top: 4px solid #e94f37;
+	box-shadow: 0 1px 1px rgba(0, 0, 0, .1);
+}
+
+	/* inverted */
+	.sidenav--invert {
+		border-top: 4px solid #393e41;
+	}
+
+	.sidenav--invert .sidenav__item {
+		border-bottom: 1px solid #ce2020;
+	}
+
+	.sidenav--invert .sidenav__item--is-active > .sidenav__list-lv2, 
+	.sidenav--invert .sidenav__item--is-active > .sidenav__list-lv3 {
+		border-top: 1px solid #ce2020;
+	}
+
+	.sidenav--invert .sidenav__list {
+		background: #e94f37;
+	}
+
+	.sidenav--invert .sidenav__item > .sidenav__link {
+		color: white;
+		background: #e94f37;
+	}
+
+	.sidenav--invert .sidenav__item > .sidenav__link:hover {
+		border-left-color: #393e41;
+		background: #e94f37;
+	}
+
+	.sidenav--invert .sidenav__item--is-active > .sidenav__link {
+		border-left-color: #393e41;
+	}
+
+	.sidenav--invert .sidenav__item--is-active > .sidenav__link:hover {
+		background: #e94f37;
+	}
+
+	/* end of inverted */
+
+.sidenav__title {
+	margin: 0;
+	padding: 16px 32px;
+	border: 1px solid #eee;
+	border-bottom: none;
+	border-top: none;
+	color: #393e41;
+
+	font-size: 32px;
+}
+
+.sidenav__list {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	border: 1px solid #eee;
+}
+
+	.sidenav__list-lv2, 
+	.sidenav__list-lv3 {
+		border: none;
+		display: none;
+	}
+
+.sidenav__item {
+	border-bottom: 1px solid #eee;
+}
+	.sidenav__item:last-child {
+		border-bottom: none;
+	}
+
+	.sidenav__item--has-sub > .sidenav__link {
+		position: relative;
+	}
+
+	.sidenav__item--has-sub > .sidenav__link:after {
+		font-family: 'FontAwesome';
+		content: '\f107';
+		position: absolute;
+		right: 15px;
+		font-weight: 500;
+	}
+
+	.sidenav__item--is-active > .sidenav__link {
+		border-left: 4px solid #e94f37;
+		background: #f2f2f2;
+	}
+
+	.sidenav__item--is-active > .sidenav__link:hover {
+		background: #f2f2f2;
+	}
+
+	.sidenav__item--is-active > .sidenav__link:after {
+		transform: rotate(180deg);
+	}
+
+	.sidenav__item--is-active > .sidenav__list-lv2, 
+	.sidenav__item--is-active > .sidenav__list-lv3 {
+		border-top: 1px solid #eee;
+		display: block;
+	}
+
+.sidenav__link {
+	text-decoration: none;
+	color: #393e41;
+	display: block;
+	padding: 16px 32px;
+	border-left: 4px solid transparent;
+}
+
+	.sidenav__link:hover {
+		background: #f9f9f9;
+		border-left: 4px solid #e94f37;
+	}
+
+	.sidenav__link:active {
+		background: #f2f2f2;
+	}
+
+	.sidenav__link-lv2 {
+		padding-left: 64px;
+	}
+
+	.sidenav__link-lv3 {
+		padding-left: 96px;
+	}
