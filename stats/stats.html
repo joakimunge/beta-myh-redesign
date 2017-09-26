@@ -3,12 +3,14 @@
 <head>
 	<title>Beta - MYH.SE - Page Skeleton</title>
 	<meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1.0">
-
-	<link rel="stylesheet" type="text/css" href="css/grid.css">
 	<link rel="stylesheet" type="text/css" href="css/reset.css">
+	<link rel="stylesheet" type="text/css" href="css/grid.css">
 	<link rel="stylesheet" type="text/css" href="css/type.css">
 	<link rel="stylesheet" type="text/css" href="css/styles.css">
-	
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+	<link rel="stylesheet" type="text/css" href="css/list.css">
+	<link rel="stylesheet" type="text/css" href="css/share.css">
+	<link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
 
 </head>
 <body>
@@ -59,14 +61,37 @@
 	</header>
 	<main>
 		<section class="container">
-		<section class="row">
+		<section class="row">	
 			<article class="col-8">
-				<img src="stats.jpeg" alt="statistik" width="100%" />
-				<h2>Statistik</h2>
+					<header class="row">
+					<h2 class="col-10">Statistik</h2>
+					<nav class="col-2">
+							<p>Dela via :</p>
+							<ul class="share-list">
+								<li class="share-item">
+									<a href="#" target="_blank" arial-label="Dela på Facebook">
+										<i class="fa fa-facebook-square"></i>
+									</a>
+								</li>
+								<li class="share-item">
+									<a href="#" target="_blank" arial-label="Dela på Twitter">
+										<i class="fa fa-twitter-square"></i>
+									</a>                            
+								</li>
+								<li class="share-item">
+									<a href="mailto:?subject=Beta Myh redesign&amp;body=Kolla in våran redesign utav myh http://joakimunge.chas.academy/03" target="_blank" arial-label="Dela via Email">
+										<i class="fa fa-envelope-square"></i>
+										</a>                    
+								</li>
+							</ul>
+						</nav>
+					</header>
+				<img src="stats2.jpg" alt="Statistik" width="100%" />
+				<p></p>
 				<p>Här hittar du statistik om yrkeshögskoleutbildningar, konst- och kulturutbildningar och vissa andra utbildningar (utbildningar
 					med endast tillsyn) samt tolkutbildningar inom folkbildningen.</p>
-				<p><i>Yrkeshögskoleutbildningar omfattar både yrkeshögskoleutbildning (YH) och
-					 kvalificerad yrkesutbildning (KY).</i></p>
+				<p><em class="em">Yrkeshögskoleutbildningar omfattar både yrkeshögskoleutbildning (YH) och
+					 kvalificerad yrkesutbildning (KY).</em></p>
 				<p>Klicka på den utbildningsform du är intresserad av i menyn till höger.</p>
 				<h3>Faktablad med statistik</h3>
 				<p>Här kan du ladda ner faktablad med kortfattad statistik om yrkeshögskole- utbildningar, konst- och kulturutbildningar
@@ -76,9 +101,11 @@
 				<a href="#" data-filetype="pdf">Faktablad med kortfattad statistik om konst- och kulturutbildningar 2016</a>
 				<p></p>
 				<a href="#" data-filetype="pdf">Faktablad med kortfattad statistik om tolkutbildningar 2016</a>
+				<p></p>
 				<h3>Statistiska årsrapporter</h3>
 				<p>Via länkarna nedan hittar du Myndigheten för yrkeshögskolans senaste årsrapporter med samlad statistik om de utbildningsformer
 					som vi ansvarar för.</p>
+					<p></p>
 				<a href="#">Statistisk årsrapport 2017</a>
 				<p></p>
 				<a href="#">Statistisk årsrapport 2016</a>
@@ -86,78 +113,76 @@
 				<a href="#">Statistisk årsrapport 2015</a>
 			</article>
 			<aside class="col-4">
-				<h2>Statistik</h2>
-				<nav>
-					<ul>
-						<li><a href="#">Yrkeshögskoleutbildningar</a>
-							<ul>
-								<li><a href="#">Ansökningar om att få bedriva utbildning</a></li>
-								<li><a href="#">Utbildningsanordnare</a></li>
-								<li><a href="#">Utbildningar och platser</a></li>
-								<li><a href="#">Sökande</a></li>
-								<li><a href="#">Studerande</a></li>
-								<li><a href="#">Examinerade och examensgrad</a></li>
-								<li><a href="#">Sysselsättning efter examen</a></li>
-								<li><a href="#">Nöjdhet med utbildningen</a></li>
-								<li><a href="#">Utbetalda statliga medel</a></li>
-								<li><a href="#">Statistik i blickfånget</a></li>
+				<h3 class="sidenav--title">Statistik</h3>
+				<nav class="col-12 sidenav">	
+					<ul class="list-menu">
+						<li class="list-menu--item"><a class="list-menu-item--link" href="#">Yrkeshögskoleutbildningar</a>
+							<ul class="list-menu list-menu--submenu">
+								<li class="list-menu--item"><a class="list-menu-item--link" href="#">Ansökningar om att få bedriva utbildning</a></li>
+								<li class="list-menu--item"><a class="list-menu-item--link" href="#">Utbildningsanordnare</a></li>
+								<li class="list-menu--item"><a class="list-menu-item--link" href="#">Utbildningar och platser</a></li>
+								<li class="list-menu--item"><a class="list-menu-item--link" href="#">Sökande</a></li>
+								<li class="list-menu--item"><a class="list-menu-item--link" href="#">Studerande</a></li>
+								<li class="list-menu--item"><a class="list-menu-item--link" href="#">Examinerade och examensgrad</a></li>
+								<li class="list-menu--item"><a class="list-menu-item--link" href="#">Sysselsättning efter examen</a></li>
+								<li class="list-menu--item"><a class="list-menu-item--link" href="#">Nöjdhet med utbildningen</a></li>
+								<li class="list-menu--item"><a class="list-menu-item--link" href="#">Utbetalda statliga medel</a></li>
+								<li class="list-menu--item"><a class="list-menu-item--link" href="#">Statistik i blickfånget</a></li>
 							</ul>
 						</li>
 
-						<li><a href="#">Konst- och kulturutbildningar och vissa andra utbildningar</a>
-							<ul>
-								<li>
-									<a href="#">Konst- och kulturutbildningar</a>
-									<ul>
-										<li><a href="#">Ansökningar om stöd</a></li>
-										<li><a href="#">Utbildningsanordnare</a></li>
-										<li><a href="#">Utbildningar och platser</a></li>
-										<li><a href="#">Studerande</a></li>
-										<li><a href="#">Studerande som slutfört utbildning</a></li>
+						<li class="list-menu--item"><a class="list-menu-item--link" href="#">Konst- och kulturutbildningar och vissa andra utbildningar</a>
+							<ul class="list-menu list-menu--submenu">
+								<li class="list-menu--item"><a class="list-menu-item--link" href="#">Konst- och kulturutbildningar</a>
+									<ul class="list-menu list-menu--submenu" >
+										<li class="list-menu--item"><a class="list-menu-item--link" href="#">Ansökningar om stöd</a></li>
+										<li class="list-menu--item"><a class="list-menu-item--link" href="#">Utbildningsanordnare</a></li>
+										<li class="list-menu--item"><a class="list-menu-item--link" href="#">Utbildningar och platser</a></li>
+										<li class="list-menu--item"><a class="list-menu-item--link" href="#">Studerande</a></li>
+										<li class="list-menu--item"><a class="list-menu-item--link" href="#">Studerande som slutfört utbildning</a></li>
 									</ul>
 								</li>
-								<li>
-									<a href="#">Vissa andra utbildningar (utbildningar med endast tillsyn)</a>
-									<ul>
-										<li><a href="#">Utbildningsanordnare</a></li>
-										<li><a href="#">Utbildningar och platser</a></li>
-										<li><a href="#">Studerande</a></li>
-										<li><a href="#">Studerande som slutfört utbildning</a></li>
+								<li class="list-menu--item"><a class="list-menu-item--link" href="#">Vissa andra utbildningar (utbildningar med endast tillsyn)</a>
+									<ul class="list-menu list-menu--submenu" >
+										<li class="list-menu--item"><a class="list-menu-item--link" href="#">Utbildningsanordnare</a></li>
+										<li class="list-menu--item"><a class="list-menu-item--link" href="#">Utbildningar och platser</a></li>
+										<li class="list-menu--item"><a class="list-menu-item--link" href="#">Studerande</a></li>
+										<li class="list-menu--item"><a class="list-menu-item--link" href="#">Studerande som slutfört utbildning</a></li>
 									</ul>
 								</li>
 							</ul>
 						</li>
 
-						<li>
-							<a href="#">Tolkutbildningar inom folkbildningen</a>
-							<ul>
-								<li><a href="#">Kontakttolkutbildning</a>
-									<ul>
-										<li><a href="#">Utbildningsanordnare</a></li>
-										<li><a href="#">Utbildningar</a></li>
-											<li><a href="#">Platser och ansökningar från sökande</a></li>
-										<li><a href="#">Deltagare</a></li>
-										<li><a href="#">Deltagare som slutfört utbildning</a></li>
+						<li class="list-menu--item">
+							<a class="list-menu-item--link" href="#">Tolkutbildningar inom folkbildningen</a>
+							<ul class="list-menu">
+								<li class="list-menu--item"><a class="list-menu-item--link" href="#">Kontakttolkutbildning</a>
+									<ul class="list-menu" >
+										<li class="list-menu--item"><a class="list-menu-item--link" href="#">Utbildningsanordnare</a></li>
+										<li class="list-menu--item"><a class="list-menu-item--link" href="#">Utbildningar</a></li>
+										<li class="list-menu--item"><a class="list-menu-item--link" href="#">Platser och ansökningar från sökande</a></li>
+										<li class="list-menu--item"><a class="list-menu-item--link" href="#">Deltagare</a></li>
+										<li class="list-menu--item"><a class="list-menu-item--link" href="#">Deltagare som slutfört utbildning</a></li>
 									</ul>
 								</li>
 							
-								<li><a href="#">Skrivtolkutbildning</a>
-									<ul>
-										<li><a href="#">Utbildningsanordnare</a></li>
-										<li><a href="#">Utbildningar</a></li>
-										<li><a href="#">Platser och sökande</a></li>
-										<li><a href="#">Deltagare</a></li>
-										<li><a href="#">Deltagare som slutfört utbildning</a></li>
+								<li class="list-menu--item"><a class="list-menu-item--link" href="#">Skrivtolkutbildning</a>
+									<ul class="list-menu">
+										<li class="list-menu--item"><a class="list-menu-item--link" href="#">Utbildningsanordnare</a></li>
+										<li class="list-menu--item"><a class="list-menu-item--link" href="#">Utbildningar</a></li>
+										<li class="list-menu--item"><a class="list-menu-item--link" href="#">Platser och sökande</a></li>
+										<li class="list-menu--item"><a class="list-menu-item--link" href="#">Deltagare</a></li>
+										<li class="list-menu--item"><a class="list-menu-item--link" href="#">Deltagare som slutfört utbildning</a></li>
 									</ul>
 								</li>
 
-								<li><a href="#">Teckenspråkstolk- och dövblindtolkutbildning</a>
-									<ul>
-										<li><a href="#">Utbildningsanordnare</a></li>
-										<li><a href="#">Utbildningar</a></li>
-										<li><a href="#">Platser och ansökningar</a></li>
-										<li><a href="#">Deltagare</a></li>
-										<li><a href="#">Deltagare som slutfört utbildning</a></li>
+								<li class="list-menu--item"><a class="list-menu-item--link" href="#">Teckenspråkstolk- och dövblindtolkutbildning</a>
+									<ul class="list-menu">
+										<li class="list-menu--item"><a class="list-menu-item--link" href="#">Utbildningsanordnare</a></li>
+										<li class="list-menu--item"><a class="list-menu-item--link" href="#">Utbildningar</a></li>
+										<li class="list-menu--item"><a class="list-menu-item--link" href="#">Platser och ansökningar</a></li>
+										<li class="list-menu--item"><a class="list-menu-item--link" href="#">Deltagare</a></li>
+										<li class="list-menu--item"><a class="list-menu-item--link" href="#">Deltagare som slutfört utbildning</a></li>
 									</ul>
 								</li>
 
@@ -305,6 +330,6 @@
 			</section>
 		</div>
 	</footer>
-
+	<script type="text/javascript" src="js/js-dropdown.js"></script>
 </body>
-</html>
+</html>		

@@ -109,6 +109,10 @@ main {
 	margin:25px 0;
 }
 
+.em{
+font-style: italic;
+}
+
 .newsblock {
 	min-height: 300px;
 }
