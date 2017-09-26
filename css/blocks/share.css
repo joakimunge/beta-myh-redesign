@@ -1,24 +1,24 @@
-.share-list {
+.share__list {
   display: flex;
   flex-direction: row;
 }
 
-.share-item {
+.share__item {
   margin-right: 10px;
 }
 
-.share-item:last-child {
+.share__item:last-child {
   margin-right: 0;
 }
 
-.share-item a {
+.share__link {
   color: #393E41;
 }
 
-.share-item a:hover {
-  color: #E94F37;
+.share__link:hover {
+  color: #E94F37;  
 }
 
-.share-item i {
+.share__item i {
   font-size: 3rem;
 }
