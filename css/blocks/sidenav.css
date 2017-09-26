@@ -1,5 +1,4 @@
 .sidenav {
-	width: 540px;
 	border-top: 4px solid #e94f37;
 	box-shadow: 0 1px 1px rgba(0, 0, 0, .1);
 }
@@ -49,8 +48,11 @@
 	border-bottom: none;
 	border-top: none;
 	color: #393e41;
+}
 
-	font-size: 32px;
+	.sidenav__title-link {
+		color: inherit;
+		font-size: inherit;
 }
 
 .sidenav__list {
