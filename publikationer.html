@@ -4,9 +4,10 @@
 	<title>Beta - MYH.SE - Page Skeleton</title>
 	<meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1.0">
 
-	<link rel="stylesheet" type="text/css" href="css/grid.css">
+    <link rel="stylesheet" type="text/css" href="css/grid.css">
 </head>
 <body>
+    <!-- header -->
 	<main class="container">
 		<section class="row">
             <div class="col-8">
@@ -173,149 +174,93 @@
             </div>
             <aside class="col-4">
                 <section class="row">
-                    <nav class="col-12">
-                        <h3>Sortera</h3>
-                        <ul>
-                            <li>
-                                <a href="#" title="Alla publikationer">Alla publikationer<span>172</span></a>
+                    <nav class="col-12 sidenav">
+                        <h3 class="sidenav__title">Sortera</h3>
+                        <ul class="sidenav__list">
+                            <li class="sidenav__item">
+                                <a class="sidenav__link" href="#" title="Alla publikationer">Alla publikationer<span class="sidenav__span">172</span></a>
                             </li>
                         </ul>
-                        <h4>Visa träffar av publikationstyp</h4>
-                        <ul>
-                            <li>
-                                <a href="#" title="Alla publikationstyper">Alla publikationstyper</a>
+                        <h4 class="sidenav__title">Visa träffar av publikationstyp</h4>
+                        <ul class="sidenav__list">
+                            <li class="sidenav__item">
+                                <a class="sidenav__link" href="#" title="Alla publikationstyper">Alla publikationstyper</a>
                             </li>
-                            <li>
-                                <a href="#" title="Rapporter">Rapporter<span>52</span></a>
+                            <li class="sidenav__item">
+                                <a class="sidenav__link" href="#" title="Rapporter">Rapporter<span class="sidenav__span">52</span></a>
+                            </li>
+                            <li class="sidenav__item">
+                                <a class="sidenav__link" href="#" title="Återrapporteringar">Återrapporteringar<span class="sidenav__span">58</span></a>
+                            </li>
+                            <li class="sidenav__item">
+                                <a class="sidenav__link" href="#" title="Informationsmaterial">Informationsmaterial<span class="sidenav__span">58</span></a>
+                            </li>
+                            <li class="sidenav__item">
+                                <a class="sidenav__link" href="#" title="Årsredovisningar">Årsredovisningar<span class="sidenav__span">8</span></a>
+                            </li>
+                        </ul>
+                        <h4 class="sidenav__title">Visa träffar från verksamhetsområde</h4>
+                        <ul class="sidenav__list">
+                            <li class="sidenav__item">
+                                <a class="sidenav__link" href="#" title="Alla områden">Alla områden</a>
+                            </li>
+                            <li class="sidenav__item">
+                                <a class="sidenav__link" href="#" title="Yrkeshögskolan">Yrkeshögskolan<span class="sidenav__span">109</span></a>
+                            </li>
+                            <li class="sidenav__item">
+                                <a class="sidenav__link" href="#" title="Konst- och kulturutbildningar">Konst- och kulturutbildningar<span class="sidenav__span">23</span></a>
+                            </li>
+                            <li class="sidenav__item">
+                                <a class="sidenav__link" href="#" title="Tolkutbildningar">Tolkutbildningar<span class="sidenav__span">13</span></a>
+                            </li>
+                            <li class="sidenav__item">
+                                <a class="sidenav__link" href="#" title="Utbildningar med endast tillsyn">Utbildningar med endast tillsyn<span class="sidenav__span">12</span></a>
+                            </li>
+                            <li class="sidenav__item">
+                                <a class="sidenav__link" href="#" title="Kompletterande utbildningar">Kompletterande utbildningar<span class="sidenav__span">20</span></a>
+                            </li>
+                            <li class="sidenav__item">
+                                <a class="sidenav__link" href="#" title="Validering">Validering<span class="sidenav__span">13</span></a>
+                            </li>
+                            <li class="sidenav__item">
+                                <a class="sidenav__link" href="#" title="SeQF">SeQF<span class="sidenav__span">15</span></a>
+                            </li>
+                        </ul>
+                        <h4 class="sidenav__title">Visa träffar från år</h4>
+                        <ul class="sidenav__list">
+                            <li class="sidenav__item">
+                                <a class="sidenav__link" href="#" title="Alla år">Alla år</a>
+                            </li>
+                            <li class="sidenav__item">
+                                <a class="sidenav__link" href="#" title="2017">2017<span class="sidenav__span">18</span></a>
+                            </li>
+                            <li class="sidenav__item">
+                                <a class="sidenav__link" href="#" title="2016">2016<span class="sidenav__span">31</span></a>
+                            </li>
+                            <li class="sidenav__item">
+                                <a class="sidenav__link" href="#" title="2015">2015<span class="sidenav__span">38</span></a>
+                            </li>
+                            <li class="sidenav__item">
+                                <a class="sidenav__link" href="#" title="2014">2014<span class="sidenav__span">20</span></a>
+                            </li>
+                            <li class="sidenav__item">
+                                <a class="sidenav__link" href="#" title="2013">2013<span class="sidenav__span">14</span></a>
+                            </li>
+                            <li class="sidenav__item">
+                                <a class="sidenav__link" href="#" title="2012">2012<span class="sidenav__span">24</span></a>
+                            </li>
+                            <li class="sidenav__item">
+                                <a class="sidenav__link" href="#" title="2011">2011<span class="sidenav__span">17</span></a>
+                            </li>
+                            <li class="sidenav__item">
+                                <a class="sidenav__link" href="#" title="2010">2010<span class="sidenav__span">10</span></a>
                             </li>
                         </ul>
                     </nav>
                 </section>
             </aside>
 		</section>
-	</main>
-	<footer>
-		<div class="container">
-			<section class="row">
-				<section class="col-3">
-					<h3>Kontakt</h3>
-					<h4>Telefon</h4>
-					<p>
-						Ring vår växel <a href="tel:+46102090100">010-209 01 00</a>
-						<br>
-						Växeln är öppen vardagar 8.00 - 17.00
-					</p>
-					<h4>E-post</h4>
-					<p>
-						Allmänna frågor/synpunkter: <a href="mailto:info@myh.se">info@myh.se</a>
-						<br>
-						Registrator: <a href="mailto:registrator@myh.se">registrator@myh.se</a>
-					</p>
-					<h4>Adress</h4>
-					<p>
-						Myndigheten för yrkeshögskolan
-						<br>
-						Box 145
-						<br>
-						721 05 Västerås
-					</p>
-				</section>
-				<section class="col-3">
-					<h3>Om webbplatsen</h3>
-					<ul>
-						<li>
-							<a href="#" title="Använda webbplatsen">Använda webbplatsen</a>
-						</li>
-						<li>
-							<a href="#" title="Om webbkakor (cookies)">Om webbkakor (cookies)</a>
-						</li>
-						<li>
-							<a href="#" title="Webbplatskarta">Webbplatskarta</a>
-						</li>
-					</ul>
-
-					<h3></h3>
-					<ul>
-						<li>
-							<a href="#" title="Yrkeshögskolans webbplats">www.yrkeshogskolan.se</a>
-						</li>
-						<li>
-							<a href="#" title="Konst- och kulturutbildningar webbplats">www.konskulturutbildning.se</a>
-						</li>
-						<li>
-							<a href="#" title="Webbplatsen för tolkutbildningar">www.blitolk.nu</a>
-						</li>
-						<li>
-							<a href="#" title="Valideringsinfos webbplats">www.valideringsinfo.se</a>
-						</li>
-						<li>
-							<a href="#" title="SEQFs webbplats">www.seqf.se</a>
-						</li>
-					</ul>
-				</section>
-				<section class="col-3">
-					<h3>Gå direkt till</h3>
-					<ul>
-						<li>
-							<a href="#" title="Mina sidor">Mina sidor</a>
-						</li>
-						<li>
-							<a href="#" title="Europass">Europass</a>
-						</li>
-						<li>
-							<a href="#" title="Pågående uppförhandlingar">Pågående uppförhandlingar</a>
-						</li>
-						<li>
-							<a href="#" title="Lediga jobb">Lediga jobb</a>
-						</li>
-						<li>
-							<a href="#" title="Pressmeddelanden">Pressmeddelanden</a>
-						</li>
-						<li>
-							<a href="#" title="Nyheter">Nyheter</a>
-						</li>
-						<li>
-							<a href="#" title="Filmrummet">Filmrummet</a>
-						</li>
-						<li>
-							<a href="#" title="Senaste publikationer">Senaste publikationer</a>
-						</li>
-					</ul>
-
-					<h3></h3>
-					<p>
-						Digital mötesplats för utbildningar
-						<a href="#" title="EPALE">EPALE</a>
-					</p>
-				</section>
-				<section class="col-3">
-					<h3>Håll dig uppdaterad</h3>
-					<ul>
-						<li>
-							<a href="#" title="Facebook">
-								<img src="" alt="Facebook" />
-							</a>
-						</li>
-						<li>
-							<a href="#" title="YouTube">
-								<img src="" alt="YouTube" />
-							</a>
-						</li>
-						<li>
-							<a href="#" title="RSS">
-								<img src="" alt="RSS" />
-							</a>
-						</li>
-					</ul>
-					<h4>Ansvarig utgivare</h4>
-					<p>
-						Thomas Persson,<br>
-						generaldirektör MYH.
-					</p>
-				</section>
-			</section>
-		</div>
-	</footer>
-
+    </main>
+    <!-- footer -->
 </body>
 </html>
