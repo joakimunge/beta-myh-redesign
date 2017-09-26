@@ -3,8 +3,16 @@
   flex-direction: row;
 }
 
+.share-item {
+  margin-right: 10px;
+}
+
+.share-item:last-child {
+  margin-right: 0;
+}
+
 .share-item a {
-  color: #393E41;  
+  color: #393E41;
 }
 
 .share-item a:hover {

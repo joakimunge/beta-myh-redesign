@@ -14,6 +14,28 @@ body {
 	background-color: rgba(92,65,93,0.0);
 }
 
+/* ------- Buttons ------- */
+
+.btn {
+	border:0;
+	outline:none;
+	padding:12px;
+	border-radius: 25px;
+	min-width: 150px;
+	cursor: pointer;
+	color:#FFF;
+	font-weight: 600;
+}
+
+.btn--accept {
+	background-color: #5c415d;
+	color:#FFF;
+}
+
+.btn--accept:hover {
+	background-color: #b896ba;
+}
+
 /* - Color Behaviours - */
 
 .dark {
@@ -63,7 +85,7 @@ body {
 
 /* ------- Header & Navigation ------- */
 
-header[role=banner] {
+header.masthead {
 	display:flex;
 	flex-direction: column;
 	align-items: center;
@@ -72,23 +94,45 @@ header[role=banner] {
 	color: #878787;
 }
 
-header[role=banner] h1 {
+header.masthead h1 {
 	display:none;
 } 
 
-header[role=banner] button.burger {
+.text-hide {
+	font-size: 0px;
+	z-index: -999;
+}
+
+header.masthead button.masthead__burger {
+	z-index: 10000;
 	display:none;
 	border:none;
 	background: none;
 	outline: none;
 	cursor: pointer;
+	position: relative;
 }
 
-.logo {
+header.masthead button.masthead__burger:after {
+	font-family: 'FontAwesome';
+	font-size: 24px;
+	line-height: 1;
+	height: 24px;
+	content: "\f0c9";
+	position: absolute;
+	top: calc(50% - 12px);
+	right: 0;
+}
+
+header.masthead button.masthead__burger.active:after {
+	content: '\f00d';
+}
+
+.masthead__logo {
 	width:250px;
 }
 
-.logo img {
+.masthead__logo img {
 	width:100%;
 	height:auto;
 }
@@ -101,12 +145,34 @@ header[role=banner] button.burger {
 	display:none;
 }
 
-.top, .bottom {
+.masthead__main, .masthead__secondary {
 	display:flex;
 	justify-content: space-between;
 	align-items:center;
 	height:5em;
 	padding:0 25px;
+}
+
+.login {
+
+}
+
+.login__field {
+	font-size: 1.2rem;
+	min-width: 150px;
+	padding: 6px 16px 6px 6px;
+	border-radius: 15px;
+	border:2px solid #ccc;
+	transition: all 0.3s ease-out;
+	-webkit-transition: all 0.3s ease-out;
+	-moz-transition: all 0.3s ease-out;
+	-o-transition: all 0.3s ease-out;
+	margin-bottom:10px;
+}
+
+.login__field:focus {
+	outline:none;
+	border:2px solid #E94F37;
 }
 
 .input__search {
@@ -131,22 +197,21 @@ header[role=banner] button.burger {
 	width: 180px;
 }
 
-nav[role=navigation] {
-	height:100%;
+nav.masthead__nav {
 	display:flex;
 	align-items: center;
-}
-
-nav[role=navigation] ul.menu {
-	display:flex;
-	justify-content:space-between;
 	height: 100%;
 }
 
-nav[role=navigation] ul.menu li a {
+nav.masthead__nav ul.masthead__menu {
+	display:flex;
+	justify-content:space-between;
+}
+
+nav.masthead__nav ul.masthead__menu li a {
 	display:flex;
 	align-items: center;
-	padding:1.5em;
+	padding:1.6em 1.3em;
 	height: 100%;
 	color: #878787;
 	text-decoration: none;
@@ -160,11 +225,11 @@ nav[role=navigation] ul.menu li a {
 	-o-transition: all 0.2s ease-in-out;
 }
 
-nav[role=navigation] ul.menu > li:hover > a {
+nav.masthead__nav ul.masthead__menu > li:hover > a {
 	border-top: 4px solid #E94F37;
 }
 
-nav[role=navigation] ul.menu ul.dropdown__content {
+nav.masthead__nav ul.masthead__menu ul.masthead__dropdown-content {
 	display:none;
 	position:absolute;
 	background-color: #FFF;
@@ -172,12 +237,17 @@ nav[role=navigation] ul.menu ul.dropdown__content {
 	z-index: 3;
 }
 
-nav[role=navigation] ul.menu li:hover .dropdown__content {
+nav.masthead__nav ul.masthead__menu ul.masthead__dropdown-content--form {
+	padding:25px 25px;
+	min-width: 250px;
+}
+
+nav.masthead__nav ul.masthead__menu li.masthead__dropdown:hover > .masthead__dropdown-content {
 	display:flex;
 	flex-direction: column;
 }
 
-nav[role=navigation] ul.menu .dropdown__content li:hover:before {
+nav.masthead__nav ul.masthead__menu .masthead__dropdown-content li:hover:before {
 	content:"";
 	background-color: #E94F37;
 	position: absolute;
@@ -188,15 +258,15 @@ nav[role=navigation] ul.menu .dropdown__content li:hover:before {
 	overflow:hidden;
 }
 
-.submenu {
+.masthead__secondary-menu {
 	height: 100%;
-	max-width: 960px;
+	width: 100%;
 	display:flex;
 	justify-content: space-around;
 	align-items:center;
 }
 
-.submenu li a {
+.masthead__secondary-menu li a {
 	display:flex;
 	align-items: center;
 	padding:1.5em;
@@ -311,14 +381,14 @@ aside#calendar {
 
 /* ------- Misc ------- */
 
-.fa { /* Icons */
+.icon { /* Icons */
 	padding-right:1rem;
 }
 
 
 /* ------- Footer ------- */
 
-footer[role=footer] {
+footer.site-footer {
 	width:100%;
 	position: relative;
 }
@@ -327,39 +397,92 @@ footer [class^="col"] {
 	background:none;
 }
 
-footer a {
+footer.site-footer a {
 	font-weight: 600;
 }
 
-footer p,a {
+footer.site-footer p,a {
 	font-size: 1.2rem;
 	line-height: 1.4rem;
 }
 
-footer[role=footer]  h3 {
+footer.site-footer h3 {
 	display:inline-block;
 	margin-top:1.2rem;
 	border-bottom:4px solid #E94F37;
 	padding-bottom:0.6rem;
 }
 
-footer ul.social {
+footer.site-footer ul.social {
 	margin-bottom:1.2rem;
 }
 
-footer ul.social li {
+footer.site-footer ul.social li {
 	display:inline-block;
 }
 /* ------- Media Queries ------- */
 
 @media all and (max-width: 1080px) {
-	header[role=banner] {
-		flex-direction: column;
+
+	header.masthead button.masthead__burger {
+		display:inline-block;
 	}
+
+	nav.masthead__nav {
+		display:none;
+		position: absolute;
+		right:0;
+		top:0;
+		z-index: 999;
+		background-color: #FFF;
+		max-width: 80vw;
+		min-width: 25vw;
+		height: 100%;
+	}
+
+	header.masthead button.masthead__burger.active + nav{
+		display:block;
+	}
+
+	nav.masthead__nav .masthead__menu {
+		flex-direction: column;
+		padding-top: 7.0rem;
+	}
+
+	nav.masthead__nav ul.masthead__menu li.masthead__dropdown:hover > .masthead__dropdown-content {
+		display: none;
+	}
+
+	nav.masthead__nav .masthead__menu .masthead__dropdown > a#login {
+		display:none;
+	}
+
+	nav.masthead__nav ul.masthead__menu ul.masthead__dropdown-content--form {
+		position: relative;
+		display:none;
+		background: none;
+		box-shadow: none;
+		z-index: 0;
+		padding:1.6em;
+	}
+
+	nav.masthead__nav ul.masthead__menu > li a {
+		border:none;
+	}
+
+	nav.masthead__nav ul.masthead__menu > li:hover > a {
+		background-color:#E94F37;
+		border:none;
+		color:#FFF;
+
+	}
+
+
+
 }
 
 @media screen and (max-width: 1280px) {
-  .logo {
+  .masthead__logo {
     width: 125px;
   }
 }
@@ -373,18 +496,12 @@ footer ul.social li {
 		display:inline-block;
 	}
 
-	.logo {
+	.masthead__logo {
 		width: 50px;
 	}
 }
 
 @media all and (max-width: 960px) {
-	header[role=banner] button.burger {
-	display:inline-block;
-	}
 
-	nav[role=navigation] ul.menu {
-		display:none;
-	}
 }
 
