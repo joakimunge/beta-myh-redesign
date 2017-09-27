@@ -16,8 +16,8 @@
 }
 
 .row--parallax{
-	/*http://www.publicdomainpictures.net/pictures/130000/velka/gray-gradient-background-1440541572Qcf.jpg*/
-	background-image: url('https://cdn.pixabay.com/photo/2016/03/15/02/42/floor-1256804_960_720.jpg');
+	/*https://cdn.pixabay.com/photo/2016/03/15/02/42/floor-1256804_960_720.jpg*/
+	background-image: url(../images/parallax.jpg);
 	background-size: cover;
 	background-attachment: fixed;
 	opacity: .8;
