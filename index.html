@@ -1,13 +1,15 @@
 <!DOCTYPE html>
-<html>
+<html lang="sv">
 <head>
 	<title>Beta - MYH.SE - Page Skeleton</title>
-	<meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" href="assets/font/fontawesome/css/font-awesome.min.css">
-	<link rel="stylesheet" type="text/css" href="css/grid.css">
 	<link rel="stylesheet" type="text/css" href="css/reset.css">
+	<link rel="stylesheet" type="text/css" href="css/grid.css">
 	<link rel="stylesheet" type="text/css" href="css/type.css">
 	<link rel="stylesheet" type="text/css" href="css/styles.css">
+	<!--[if !IE]><!--><style type="text/css">* {transition: none !important;}</style><!--<![endif]-->
 </head>
 <body>
 	<header class="masthead container-fluid" role="banner">
@@ -27,17 +29,17 @@
 				<ul class="masthead__menu">
 					<li class="masthead__dropdown">
 						<a href="#" id="login"><i class="fa fa-user-circle-o fa-2x" aria-hidden="true"></i></a>
-						<ul class="masthead__dropdown-content masthead__dropdown-content--form">
+						<section class="masthead__dropdown-content masthead__dropdown-content--form">
 							<h4>Logga in på Mina Sidor</h4>
-							<form type="text" class="login v-end">
-								<input class="login__field" type="text" name="username" placeholder="Användarnamn">
-								<input class="login__field" type="text" name="password" placeholder="Lösenord">
+							<form class="input v-end">
+								<input class="input__text" type="text" name="username" placeholder="Användarnamn">
+								<input class="input__text" type="text" name="password" placeholder="Lösenord">
 								<button class="btn btn--accept" type="submit">Logga in!</button>
 							</form>
-						</ul>
+						</section>
 					</li>
 					<li class="v-centered">
-						<form type="text" class="input">
+						<form class="input">
 							<input class="input__search" type="text" name="search" placeholder="Sök..">
 						</form>	
 					</li>
@@ -74,20 +76,20 @@
 	</header>
 	<main role="main">
 		<div class="container">
-			<section class="row block">
-				<article id="selected__item" class="col-8 v-end dark overlay--dark"> <!-- listbox is for accessability to show this is a carousel. role="option" will be used for each slide -->
+			<section class="row">
+				<article id="selected__item" class="col-8 v-end block dark overlay--dark"> <!-- listbox is for accessability to show this is a carousel. role="option" will be used for each slide -->
 						<header>
 							<h2>Konferens om yrkeshögskola - 11 Oktober</h2>
 						</header>
 							<p>Den 7 september är sista dagen att skicka in ansökan om att bedriva YH-utbildning.</p>
 						<footer>
-							<p><time>6 september, 2017</time></p>
+							<p><time datetime="2017-09-06T12:03">6 september, 12:03</time></p>
 						</footer>
 				</article>
-				<aside id="calendar" class="col-4 v-end light">
+				<aside id="calendar" class="col-4 v-end block light">
 					<header>
 						<p>Nästkommande händelse</p>
-						<h2><time>25 september</time></h2>
+						<h2>25 september</h2>
 					</header>
 						
 					<footer>
@@ -96,47 +98,47 @@
 					</footer>
 				</aside>
 			</section>
-			<section class="row block">
-					<article id="first" class="col-12 v-end dark overlay--dark">
+			<section class="row">
+					<article id="first" class="col-12 v-end block dark overlay--dark">
 						<header>
 							<h2>Största satsningen någonsin kräver gemensam ansträngning</h2>
 						</header>
 							<p>Vi vet. Ni vet. Och politiken vet. Vad vet vi? Jo, vad yrkeshögskolan är, att den fungerar och är värd att satsa på.</p>
 						<footer>
-							<p><time>12 september, 2017</time></p>
+							<p><time datetime="2017-09-12T17:31">12 september, 17:31</time></p>
 						</footer>
 					</article>
 			</section>
-			<section class="row block">
-				<article id="second" class="col-4 v-end dark overlay--dark">
+			<section class="row">
+				<article id="second" class="col-4 v-end block dark overlay--dark">
 					<header>
 						<h2>Tack för inskickade ansökningar om att bedriva YH-utbildning</h2>
 					</header>
 						<p>Nu påbörjar myndigheten sitt handläggningsarbete.</p>
 					<footer>
-						<p><time>8 september, 2017</time></p>
+						<p><time datetime="2017-09-08T13:41">8 september, 13:41</time></p>
 					</footer>
 				</article>
-				<article id="third" class="col-8 v-end dark overlay--dark">
+				<article id="third" class="col-8 v-end block dark overlay--dark">
 					<header>
 						<h2>Imorgon stänger årets ansökningsomgång för YH</h2>
 					</header>
 						<p>Den 7 september är sista dagen att skicka in ansökan om att bedriva YH-utbildning.</p>
 					<footer>
-						<p><time>6 september, 2017</time></p>
+						<p><time datetime="2017-09-06T12:03">6 september, 12:03</time></p>
 					</footer>
 				</article>
 			</section>
 			<section class="row">
-				<div class="col-8 col--nested news">
+				<div class="col-8 col--nested content">
 					<div class="row v-centered white">
 						<div class="col-4 h-centered">
-							<img class="news__img" src="assets/img/article_s_1.jpg">
+							<img class="content__img" src="assets/img/article_s_1.jpg" alt="artikelbild">
 						</div>
 						<div class="col-8 v-centered">
-							<article class="news__story">
+							<article class="content__story">
 								<a href="#"><h3>Fördjupad information om årets ansökningsomgång för YH</h3></a>
-								<p><time>5 september, 12:14</time></p>
+								<p><time datetime="2017-09-05T12:14">5 september, 12:14</time></p>
 								<p>Idag presenterar myndigheten statistik över hur årets 1 207 inkomna ansökningar om att bedriva yrkeshögskoleutbildning (YH) fördelar sig över utbildningsområdena.</p>
 								<p><a href="">Läs mer</a></p>
 							</article>
@@ -144,12 +146,12 @@
 					</div>
 					<div class="row v-centered white">
 						<div class="col-4 h-centered">
-							<img class="news__img" src="assets/img/article_s_2.jpg">
+							<img class="content__img" src="assets/img/article_s_2.jpg" alt="artikelbild">
 						</div>
 						<div class="col-8">
-							<article class="news__story">
+							<article class="content__story">
 								<a href="#"><h3>Missa inte seminariet för arbetsgivare i Stockholm den 25 september</h3></a>
-								<p><time>3 september, 08:44</time></p>
+								<p><time datetime="2017-09-03T08:44">3 september, 08:44</time></p>
 								<p>Du som är arbetsgivare välkomnas till ett kostnadsfritt seminarium om kompetensförsörjning.</p>
 								<p><a href="">Läs mer</a></p>
 							</article>
@@ -157,24 +159,24 @@
 					</div>
 					<div class="row v-centered white">
 						<div class="col-4 h-centered">
-							<img class="news__img" src="assets/img/article_s_3.jpg">
+							<img class="content__img" src="assets/img/article_s_3.jpg" alt="artikelbild">
 						</div>
 						<div class="col-8">
-							<article class="news__story">
+							<article class="content__story">
 								<a href="#"><h3>Ansökningsomgången för kurser i kontakttolkning har öppnat</h3></a>
-								<p><time>1 september, 16:04</time></p>
+								<p><time  datetime="2017-09-01T16:04">1 september, 16:04</time></p>
 								<p>Nu kan folkhögskolor och studieförbund ansöka om statsbidrag för kurser i kontakttolkning med kursstart under 2018. Ansökningsomgången är öppen till och med den 12 oktober 2017.</p>
 								<p><a href="">Läs mer</a></p>
 							</article>
 						</div>
 					</div>
 				</div>
-				<div class="col-4 col--nested news white">
+				<div class="col-4 col--nested content white">
 					<div class="row">
 						<div class="col-12">
-							<article class="news__story">
+							<article class="content__story">
 								<a href="#"><h4>Snart öppnar ansökan om statsbidrag för kurser i kontakttolkning</h4></a>
-								<p><time>30 augusti, 14:07</time></p>
+								<p><time datetime="2017-08-30T14:07">30 augusti, 14:07</time></p>
 								<p>I mitten av september kan folkhögskolor och studieförbund ansöka om statsbidrag hos MYH för kurser i kontakttolkning med start 2018.</p>
 								<p><a href="">Läs mer</a></p>
 							</article>
@@ -182,9 +184,9 @@
 					</div>
 					<div class="row">
 						<div class="col-12">
-							<article class="news__story">
+							<article class="content__story">
 								<a href="#"><h4>Tips inför att ansökan om att bedriva YH-utbildning stänger</h4></a>
-								<p><time>29 augusti, 11:51</time></p>
+								<p><time datetime="2017-08-29T11:51">29 augusti, 11:51</time></p>
 								<p>Den 7 september ska ansökan vara inskickad, vi vill därför påminna om några saker som kan vara bra att kontrollera innan dess.</p>
 								<p><a href="">Läs mer</a></p>
 							</article>
@@ -192,9 +194,9 @@
 					</div>
 					<div class="row">
 						<div class="col-12">
-							<article class="news__story">
+							<article class="content__story">
 								<a href="#"><h4>Ny rutin för rapportering av YH-studerande</h4></a>
-								<p><time>27 augusti, 09:02</time></p>
+								<p><time datetime="2017-08-27T09:02">27 augusti, 09:02</time></p>
 								<p>Tisdagen den 22 augusti kommer vi att genomföra de tidigare aviserade förändringarna på Mina sidor som förenklar rapporteringen av studerande vid en yrkeshögskoleutbildning.</p>
 								<p><a href="">Läs mer</a></p>
 							</article>
@@ -207,7 +209,7 @@
 			</section>
 		</div>
 	</main>
-	<footer role="footer" class="site-footer dark">
+	<footer role="contentinfo" class="site-footer dark">
 		<div class="container">
 			<section class="row h-centered">
 				<section class="col-none">
@@ -293,13 +295,9 @@
 						<li>
 							<a href="#" title="Senaste publikationer">Senaste publikationer</a>
 						</li>
+						<li><a href="#" title="EPALE">Digital mötesplats för utbildningar - EPALE</a></li>
 					</ul>
 
-					<h3></h3>
-					<h5>
-						Digital mötesplats för utbildningar
-						<a href="#" title="EPALE">EPALE</a>
-					</h5>
 				</section>
 				<section class="col-none">
 					<h3>Håll dig uppdaterad</h3>
