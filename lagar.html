@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="sv">
 <head>
 	<title>Beta - MYH.SE - Lagar</title>
 	<meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,83 +7,106 @@
 	<link rel="stylesheet" type="text/css" href="css/grid.css">
 	<link rel="stylesheet" type="text/css" href="css/type.css">
 	<link rel="stylesheet" type="text/css" href="css/styles.css">
+	<link rel="stylesheet" href="css/share.css">
 	<link rel="stylesheet" type="text/css" href="css/lagar.css">
 	
 
 </head>
 <body>
-	<header class="container-fluid" role="banner">
-			<div class="container-fluid top">
-				<a href="#">
-					<h1>MYh - Myndigheten för yrkeshögskolan</h1>
-					<img src="https://www.myh.se/assets/images/myh_logo.png" width="150" alt="MYhs Logotyp" />
-				</a>
-				<nav role="navigation">
-					<button class="burger"></button>
-					<ul class="menu">
-						<li><a href="#">Start</a></li>
-						<li><a href="#">Om oss</a></li>
-						<li>
-							<a href="#">Verksamhetsområden</a>
-							<ul class="dropdown__content">
-								<li><a href="#">Yrkeshögskolan</a></li>
-								<li><a href="#">Konst- och kulturutbildningar</a></li>
-								<li><a href="#">Tolkutbildningar</a></li>
-								<li><a href="#">Utbildningar med endast tillsyn</a></li>
-								<li><a href="#">SeQF</a></li>
-								<li><a href="#">Branschvalidering</a></li>
-								<li><a href="#">Kompletterande Utbildningar</a></li>
-							</ul>
-						</li>
-						<li><a href="#">Lagar, regler &amp; tillsyn</a></li>
-						<li><a href="#">Statistik</a></li>
-						<li><a href="#">Publikationer</a></li>
-						<li><a href="#">Nyhetsrum</a></li>
-						<li><a href="#">Kontakt</a></li>
-	
-					</ul>
-				</nav>
-				<form type="text" class="input">
-					<input class="input__search" type="text" name="search" placeholder="Sök..">
-				</form>
+	<header role="banner" class="container-fluid">
+		<div class="container-fluid top">
+			<a href="#">
+				<h1>MYh - Myndigheten för yrkeshögskolan</h1>
+				<img src="https://www.myh.se/assets/images/myh_logo.png" width="150" alt="MYhs Logotyp" />
+			</a>
+			<nav role="navigation">
+				<button aria-haspopup="true" class="burger"></button>
+				<ul class="menu">
+					<li><a href="#">Start</a></li>
+					<li><a href="#">Om oss</a></li>
+					<li>
+						<a href="#" aria-haspopup="true">Verksamhetsområden</a>
+						<ul class="dropdown__content" role="menu">
+							<li><a href="#">Yrkeshögskolan</a></li>
+							<li><a href="#">Konst- och kulturutbildningar</a></li>
+							<li><a href="#">Tolkutbildningar</a></li>
+							<li><a href="#">Utbildningar med endast tillsyn</a></li>
+							<li><a href="#">SeQF</a></li>
+							<li><a href="#">Branschvalidering</a></li>
+							<li><a href="#">Kompletterande Utbildningar</a></li>
+						</ul>
+					</li>
+					<li><a href="#">Lagar, regler &amp; tillsyn</a></li>
+					<li><a href="#">Statistik</a></li>
+					<li><a href="#">Publikationer</a></li>
+					<li><a href="#">Nyhetsrum</a></li>
+					<li><a href="#">Kontakt</a></li>
+
+				</ul>
+			</nav>
+			<form role="search" class="input">
+				<input class="input__search" type="text" name="search" placeholder="Sök..">
+			</form>
+		</div>
+		<div class="container-fluid dark">
+			<div class="container">
+				<ul class="submenu">
+					<li><a href="#"><i class="fa fa-pencil-square fa-2x" aria-hidden="true"></i> Ansök om att bedriva utbildning</a></li>
+					<li><a href="#"><i class="fa fa-id-card fa-2x" aria-hidden="true"></i> För dig som bedriver utbildning</a></li>
+					<li><a href="#"><i class="fa fa-users fa-2x" aria-hidden="true"></i> Företag och organisationer</a></li>
+				</ul>
 			</div>
-			<div class="container-fluid dark">
-				<div class="container">
-					<ul class="submenu">
-						<li><a href="#"><i class="fa fa-pencil-square fa-2x" aria-hidden="true"></i> Ansök om att bedriva utbildning</a></li>
-						<li><a href="#"><i class="fa fa-id-card fa-2x" aria-hidden="true"></i> För dig som bedriver utbildning</a></li>
-						<li><a href="#"><i class="fa fa-users fa-2x" aria-hidden="true"></i> Företag och organisationer</a></li>
-					</ul>
-				</div>
-			</div>
-		</header>
-	<main class="container">
-		<section class="row main-content">
-			<article class="col-8 light">
-					<h2>Lagar, regler och tillsyn</h2>
-					<img src="img/law.jpg" alt="Library">
-					<p class="lead">För alla utbildningsformer finns det lagar och andra bestämmelser som måste följas. Det gäller till exempel hur utbildningarna ska utformas, kursplaner, betygskriterier, examina, tillträde och avgifter.</p>
-					<p>Här hittar du de <a href="#">lagar och förordningar</a> som reglerar de utbildningsformer som Myndigheten för yrkeshögskolan ansvarar för. Här finns även de <a href="#">föreskrifter</a> som vi har beslutat om, samt de <a href="#">allmänna råd</a> vi har gett ut. </p>
-					<p>Genom <a href="#">tillsyn</a> kontrollerar myndigheten att utbildningarna följer de lagar och regler som gäller. I menyn till höger kan du läsa om hur tillsynen går till och hitta tillsynsbeslut.</p>
-					<p>Om du anser att det finns brister i en utbildning kan du anmäla det till oss. <a href="#">Anmäl brister i en utbildning.</a></p>
+		</div>
+	</header>
+	<main role="main" class="container">
+		<section role="region" class="row main-content">
+			<article role="article" class="col-8 news">
+				<header class="row">
+					<h2 class="col-10">Lagar, Regler och Tillsyn</h2>
+					<nav class="col-2">
+						<p>Dela via :</p>
+						<ul class="share-list">
+							<li class="share-item">
+								<a href="#" target="_blank" aria-label="Dela på Facebook">
+									<i class="fa fa-facebook-square"></i>
+								</a>
+							</li>
+							<li class="share-item">
+								<a href="#" target="_blank" aria-label="Dela på Twitter">
+									<i class="fa fa-twitter-square"></i>
+								</a>                            
+							</li>
+							<li class="share-item">
+								<a href="mailto:?subject=Beta Myh redesign&amp;body=Kolla in våran redesign utav myh http://joakimunge.chas.academy/03" target="_blank" aria-label="Dela via Email">
+									<i class="fa fa-envelope-square"></i>
+								</a>                    
+							</li>
+						</ul>
+					</nav>
+				</header>
+				<p class="lead">För alla utbildningsformer finns det lagar och andra bestämmelser som måste följas. Det gäller till exempel hur utbildningarna ska utformas, kursplaner, betygskriterier, examina, tillträde och avgifter.</p>
+				<p>Här hittar du de <a href="#" aria-label="Läs mer om lagar och förordningar">lagar och förordningar</a> som reglerar de utbildningsformer som Myndigheten för yrkeshögskolan ansvarar för. Här finns även de <a href="#" aria-label="Läs mer om föreskrifter">föreskrifter</a> som vi har beslutat om, samt de <a href="#" aria-label="Läs mer om almänna råd">allmänna råd</a> vi har gett ut. </p>
+				<p>Genom <a href="#" aria-label="Läs mer om tillsyn">tillsyn</a> kontrollerar myndigheten att utbildningarna följer de lagar och regler som gäller. I menyn till höger kan du läsa om hur tillsynen går till och hitta tillsynsbeslut.</p>
+				<p>Om du anser att det finns brister i en utbildning kan du anmäla det till oss. <a href="#" aria-label="Gå till formulär för att anmäla brister i en utbildning">Anmäl brister i en utbildning.</a></p>
+				<img src="img/law.jpg" alt="Library">
 			</article>
-			<aside class="col-4 sticky-sidenav">
-				<nav class="col-12 sidenav light">
+			<aside role="complementary" class="col-4 sticky-sidenav">
+				<nav class="col-12 sidenav">
 					<h3 class="sidenav--title"><a class="sidenav--title" href="#">Lagar, regler och tillsyn</a></h3>
 					<ul class="list-menu">
 						<li class="list-menu--item"><a class="list-menu-item--link" href="#">Lagar och förordningar</a></li>
-						<li class="list-menu--item"><a class="list-menu-item--link" href="#">Gällande föreskrifter</a>
+						<li class="list-menu--item"><a class="list-menu-item--link" href="#" aria-haspopup="true">Gällande föreskrifter</a>
 							<ul class="list-menu list-menu--submenu">
 								<li class="list-menu--item list-menu--item__sub"><a class="list-menu-item--link list-menu-item--sublink" href="#">Upphävda föreskrifter</a></li>
 							</ul>
 						</li>
 						<li class="list-menu--item"><a class="list-menu-item--link" href="#">Allmäna råd</a></li>
-						<li class="list-menu--item"><a class="list-menu-item--link" href="#">Tillsyn</a>
+						<li class="list-menu--item"><a class="list-menu-item--link" href="#" aria-haspopup="true">Tillsyn</a>
 							<ul class="list-menu list-menu--submenu">
 								<li class="list-menu--item list-menu--item__sub"><a class="list-menu-item--link list-menu-item--sublink" href="#">Tillsynsbeslut yrkeshögskolan</a></li>
 							</ul>
 						</li>
-						<li class="list-menu--item"><a class="list-menu-item--link" href="#">Kvalitetsgranskning</a>
+						<li class="list-menu--item"><a class="list-menu-item--link" href="#" aria-haspopup="true">Kvalitetsgranskning</a>
 							<ul class="list-menu list-menu--submenu">
 								<li class="list-menu--item list-menu--item__sub"><a class="list-menu-item--link list-menu-item--sublink" href="#">Beslut och rapporter 2017</a></li>
 								<li class="list-menu--item list-menu--item__sub"><a class="list-menu-item--link list-menu-item--sublink" href="#">Beslut och rapporter 2016</a></li>
@@ -91,7 +114,7 @@
 								<li class="list-menu--item list-menu--item__sub"><a class="list-menu-item--link list-menu-item--sublink" href="#">Beslut och rapporter 2014</a></li>
 							</ul>
 						</li>
-						<li class="list-menu--item"><a class="list-menu-item--link" href="#">Anmäl brister i en utbildning</a>
+						<li class="list-menu--item"><a class="list-menu-item--link" href="#" aria-haspopup="true">Anmäl brister i en utbildning</a>
 							<ul class="list-menu list-menu--submenu">
 								<li class="list-menu--item list-menu--item__sub"><a class="list-menu-item--link list-menu-item--sublink" href="#">Skicka in en anmälan</a></li>
 							</ul>
@@ -101,10 +124,10 @@
 			</aside>
 		</section>
 	</main>
-	<footer role="footer">
+	<footer role="contentinfo">
 		<div class="container">
-			<section class="row h-centered">
-				<section class="col-none">
+			<section role="region" class="row h-centered">
+				<section role="region" class="col-none">
 					<h3>Kontakt</h3>
 					<h4>Telefon</h4>
 					<p>
@@ -127,7 +150,7 @@
 						721 05 Västerås
 					</p>
 				</section>
-				<section class="col-none">
+				<section role="region" class="col-none">
 					<h3>Om webbplatsen</h3>
 					<ul>
 						<li>
@@ -160,7 +183,7 @@
 						</li>
 					</ul>
 				</section>
-				<section class="col-none">
+				<section role="region" class="col-none">
 					<h3>Gå direkt till</h3>
 					<ul>
 						<li>
@@ -189,13 +212,12 @@
 						</li>
 					</ul>
 
-					<h3></h3>
+					<h3>Digital mötesplats för utbildningar</h3>
 					<p>
-						Digital mötesplats för utbildningar
 						<a href="#" title="EPALE">EPALE</a>
 					</p>
 				</section>
-				<section class="col-none">
+				<section role="region" class="col-none">
 					<h3>Håll dig uppdaterad</h3>
 					<ul>
 						<li>
