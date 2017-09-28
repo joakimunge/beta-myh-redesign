@@ -1,0 +1,24 @@
+.share__list {
+    display: flex;
+    flex-direction: row;
+  }
+  
+  .share__item {
+    margin-right: 10px;
+  }
+  
+  .share__item:last-child {
+    margin-right: 0;
+  }
+  
+  .share__link {
+    color: #393E41;
+  }
+  
+  .share__link:hover {
+    color: #E94F37;  
+  }
+  
+  .share__item i {
+    font-size: 3rem;
+  }
