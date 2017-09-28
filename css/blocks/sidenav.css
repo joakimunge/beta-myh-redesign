@@ -50,6 +50,11 @@
 	color: #393e41;
 }
 
+	.sidenav__title-link {
+		color: inherit;
+		font-size: inherit;
+}
+
 .sidenav__list {
 	list-style-type: none;
 	margin: 0;
