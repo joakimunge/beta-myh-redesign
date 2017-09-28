@@ -1,33 +1,9 @@
 
-a {
-    text-decoration: none;
-}
 
-.main-content {
-    align-items: flex-start;
-    margin: 20px auto;
-}
 
-i {
-  margin-right: 10px;
-  
-}
-
-@media screen and (max-width: 950px){
-  img {
-    width: 95%;
-  }
-  
-}
-
-@media screen and (max-width: 690px){
+@media screen and (max-width: 640px){
   aside{
     order: -1;
-    width: 100%; 
+    width: 100%;
   }
-
-  .row {
-    flex-direction: column;
-  }
-
 }
