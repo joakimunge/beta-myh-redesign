@@ -1,6 +1,3 @@
-		/* ------- Font Import ------- */
-
-		@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800');
 
 		/* 
 		Font-base: 14;
@@ -16,24 +13,13 @@
 			font-size: 1.4rem; /* 14px */
 		}
 
-		.dark {
-			color:#F6F7EB;
-			background-color:#393E41;
-		}
-
-		.dark a {
-			color:#F6F7EB;
-		}
-
-		.dark a:hover {
-			color:#E94F37;
-
-		}
-
-		.light {
-			color:#393E41;
-			background-color: #F6F7EB;
-
+		a {
+			font-weight: 500;
+			text-decoration: none;
+			transition: all 0.3s ease-out;
+			-webkit-transition: all 0.3s ease-out;
+			-moz-transition: all 0.3s ease-out;
+			-o-transition: all 0.3s ease-out;
 		}
 
 		h1 {
@@ -68,6 +54,8 @@
 		h5 {
 			font-size:1.4rem; /* 14px */
 			font-weight:600;
+			line-height: 1.2;
+			margin-bottom:0.8rem;
 		}
 
 		p {
@@ -80,8 +68,19 @@
 			margin-bottom: 0;
 		}
 
-		time {
+		p > time, p.time {
 			font-size: 1.0rem; /* 10px */
 			line-height: 1.2;
+		}
+
+		p > a {
+			text-decoration: none;
+			font-weight: 500;
+		}
+
+		.lead {
+			font-size: 1.8rem;
+			line-height: 1.2;
+			margin-bottom: 1.2rem;
 		}
 
