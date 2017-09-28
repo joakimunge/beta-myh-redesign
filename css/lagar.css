@@ -13,96 +13,21 @@ i {
   
 }
 
-/* Sidenav */
-:root {
-    --contrast-color: slateblue;*/
-    --list-item-bg: #f7f7f7;
-    --list-item-h-bg: #efefef;
-    --list-item-bg-sub: #ececec; 
-    --list-item-h-bg-sub: #d7d7d7; 
-    --border-color: #eee;
-    --border-color-sub: #dadada;
+@media screen and (max-width: 950px){
+  img {
+    width: 95%;
   }
   
-  .sticky-sidenav {
-    position: sticky;
-    top: 20px;
-    padding-top: 0;
+}
+
+@media screen and (max-width: 690px){
+  aside{
+    order: -1;
+    width: 100%; 
   }
 
-  .sidenav {
-    border-radius: 3px;
-    padding: 0;
+  .row {
+    flex-direction: column;
   }
-  
-  .sidenav--title {
-    padding: 15px;
-    background: var(--contrast-color);
-    color: white;
-    margin-bottom: 0;
-  }
-  .sidenav--title:first-child {
-    border-top-left-radius: 3px;
-    border-top-right-radius: 3px;
-  }
-  
-  .list-menu {
-    background: var(--list-item-bg);
-  }
-  
-  .list-menu--submenu {
-    max-height: 0px;
-    overflow: hidden;
-    transition: all 300ms ease-out;
-  }
-  
-  a.list-menu-item--link__active .list-menu--submenu {
-    display: block;
-  }
-  
-  .list-menu--item {
-    border-bottom: 1px solid var(--border-color);
-  }
-  .list-menu--item:last-child {
-    border-bottom: none;
-  }
-  
-  .list-menu--item__sub {
-    border-color: var(--border-color-sub);
-  }
-  
-  .list-menu-item--link {
-    display: flex;
-    align-items: center;
-    padding: 15px;
-    color: #555;
-  }
-  .list-menu-item--link:hover {
-    background: var(--list-item-h-bg);
-  }
-  
-  .list-menu-item--link__has-sub {
-    
-  }
-  
-  .list-menu-item--link__active {
-    background-color: var(--list-item-h-bg-sub);
-  }
-  
-  .list-menu-item--sublink {
-    padding-left: 45px;
-    background: var(--list-item-bg-sub); 
-  }
-  .list-menu-item--sublink:hover {
-    background: var(--list-item-h-bg-sub); 
-  }
-  
-  .list-menu-item-link--span {
-    display: inline-block;
-    margin-left: auto;
-    background: var(--contrast-color);
-    color: white;
-    padding: 4px;
-    border-radius: 4px;
-  }
-  
+
+}
