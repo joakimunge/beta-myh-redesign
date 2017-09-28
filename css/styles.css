@@ -1,11 +1,11 @@
-/* ------- Font Import ------- */
+/* ------- Font & Css import ------- */
 
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800');
-
+@import url('./type.css');
 
 /* ------- General Styling ------- */
 
-* {
+*, :after, :before {
 	box-sizing: border-box;
 }
 
@@ -111,6 +111,10 @@ header.masthead button.masthead__burger {
 	outline: none;
 	cursor: pointer;
 	color:#878787;
+	transition: all 0.3s ease-out;
+	-webkit-transition: all 0.3s ease-out;
+	-moz-transition: all 0.3s ease-out;
+	-o-transition: all 0.3s ease-out;
 }
 
 header.masthead button.masthead__burger:after {
@@ -122,6 +126,11 @@ header.masthead button.masthead__burger:after {
 	position: fixed;
 	top: 20px;
 	right: 20px;
+}
+
+header.masthead button.masthead__burger:hover {
+	color:#E94F37;
+
 }
 
 header.masthead button.masthead__burger.active:after {
@@ -204,7 +213,7 @@ nav.masthead__nav ul.masthead__menu {
 	justify-content:space-between;
 }
 
-nav.masthead__nav ul.masthead__menu li a {
+nav.masthead__nav ul.masthead__menu li a, .masthead__dropdown-mobile > a {
 	display:flex;
 	align-items: center;
 	padding:1.6em 1.3em;
@@ -221,11 +230,19 @@ nav.masthead__nav ul.masthead__menu li a {
 	-o-transition: all 0.2s ease-in-out;
 }
 
+.masthead__dropdown-mobile > a:hover {
+	color:#E94F37;
+}
+
 nav.masthead__nav ul.masthead__menu > li:hover > a {
 	border-top: 4px solid #E94F37;
 }
 
-nav.masthead__nav ul.masthead__menu .masthead__dropdown-content {
+.masthead__dropdown-mobile {
+	display:none;
+}
+
+.masthead__dropdown-content {
 	display:none;
 	position:absolute;
 	background-color: #FFF;
@@ -233,17 +250,17 @@ nav.masthead__nav ul.masthead__menu .masthead__dropdown-content {
 	z-index: 3;
 }
 
-nav.masthead__nav ul.masthead__menu .masthead__dropdown-content--form {
+.masthead__dropdown-content--form {
 	padding:25px 25px;
 	min-width: 250px;
 }
 
-nav.masthead__nav ul.masthead__menu li.masthead__dropdown:hover > .masthead__dropdown-content {
+.masthead__dropdown-mobile:hover > .masthead__dropdown-content, .masthead__dropdown:hover > .masthead__dropdown-content {
 	display:flex;
 	flex-direction: column;
 }
 
-nav.masthead__nav ul.masthead__menu .masthead__dropdown-content li:hover:before {
+.masthead__dropdown-content li:hover:before {
 	content:"";
 	background-color: #E94F37;
 	position: absolute;
@@ -419,14 +436,27 @@ footer.site-footer ul.social li {
 @media all and (max-width: 1080px) {
 
 	.masthead__main {
-		position: fixed;
+		top:0;
 		z-index: 5;
 		background-color: #FFF;
 		box-shadow: 0px 2px 6px rgba(0,0,0,0.1);
+		padding:0;
+	}
+
+	.masthead__secondary {
+		top:5em;
+	}
+
+	.masthead__dropdown-mobile {
+		display:inline-block;
 	}
 
 	header.masthead button.masthead__burger {
 		display:inline-block;
+	}
+
+	header.masthead button.masthead__burger:after {
+		position: absolute;
 	}
 
 	nav.masthead__nav {
@@ -479,8 +509,7 @@ footer.site-footer ul.social li {
 		border:none;
 		color:#FFF;
 
-	}
-
+	}W
 	.input__search {
 		width: 180px;
 		cursor: auto;
@@ -488,7 +517,6 @@ footer.site-footer ul.social li {
 		margin-left:15px;
 		margin-bottom: 1.4rem;
 	}
-
 }
 
 @media screen and (max-width: 1280px) {

@@ -1,19 +1,28 @@
 <!DOCTYPE html>
 <html lang="sv">
 <head>
-	<title>Beta - MYH.SE - Page Skeleton</title>
+	<title>Myndigheten för Yrkeshögskolan - MYH.se</title>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" href="assets/font/fontawesome/css/font-awesome.min.css">
 	<link rel="stylesheet" type="text/css" href="css/reset.css">
 	<link rel="stylesheet" type="text/css" href="css/grid.css">
-	<link rel="stylesheet" type="text/css" href="css/type.css">
 	<link rel="stylesheet" type="text/css" href="css/styles.css">
-	<!--[if !IE]><!--><style type="text/css">* {transition: none !important;}</style><!--<![endif]-->
 </head>
 <body>
 	<header class="masthead container-fluid" role="banner">
 		<div class="container-fluid masthead__main">
+			<div class="masthead__dropdown-mobile">
+				<a href="#" id="login"><i class="fa fa-user-circle-o fa-2x" aria-hidden="true"></i></a>
+				<section class="masthead__dropdown-content masthead__dropdown-content--form">
+					<h4>Logga in på Mina Sidor</h4>
+					<form class="input v-end">
+						<input class="input__text" type="text" name="username" placeholder="Användarnamn">
+						<input class="input__text" type="text" name="password" placeholder="Lösenord">
+						<button class="btn btn--accept" type="submit">Logga in!</button>
+					</form>
+				</section>
+			</div>
 			<div class="masthead__logo">
 				<a href="./index.html">
 					<h1>MYh - Myndigheten för yrkeshögskolan</h1>
@@ -25,7 +34,6 @@
 				<span class="text-hide">Mobile Menu</span>
 			</button>
 			<nav class="masthead__nav" role="navigation">
-				
 				<ul class="masthead__menu">
 					<li class="masthead__dropdown">
 						<a href="#" id="login"><i class="fa fa-user-circle-o fa-2x" aria-hidden="true"></i></a>
