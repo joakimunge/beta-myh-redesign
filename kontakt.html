@@ -4,25 +4,58 @@
 	<title>Beta - MYH.SE - Kontakter</title>
 	<meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1.0">
 
+	<link rel="stylesheet" href="assets/font/fontawesome/css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="css/reset.css">
 	<link rel="stylesheet" type="text/css" href="css/grid.css">
 	<link rel="stylesheet" type="text/css" href="css/blocks/share.css">
 	<link rel="stylesheet" type="text/css" href="css/blocks/sidenav.css">
+	<link rel="stylesheet" type="text/css" href="css/type.css">
+	<link rel="stylesheet" type="text/css" href="css/styles.css">
+	<link rel="apple-touch-icon" sizes="120x120" href="assets/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon/favicon-16x16.png">
+    <link rel="manifest" href="assets/favicon/manifest.json">
+    <link rel="mask-icon" href="assets/favicon/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="theme-color" content="#ffffff">
+	
 </head>
 <body>
-	<header>
-		<div class="container">
-			<a href="#">
-				<h1>MYh - Myndigheten för yrkeshögskolan</h1>
-				<img src="https://www.myh.se/assets/images/myh_logo.png" width="150" alt="MYhs Logotyp" />
-			</a>
-			<nav>
-				<button class="burger"></button>
-				<ul>
+	<header class="masthead container-fluid" role="banner">
+		<div class="container-fluid masthead__main">
+			<div class="masthead__logo">
+				<a href="./index.html">
+					<h1>MYh - Myndigheten för yrkeshögskolan</h1>
+					<img id="lg" src="assets/img/yh.png" alt="MYhs Logotyp" />
+					<img id="sm" src="assets/img/yh_staende.png" alt="MYG Logotyp">
+				</a>
+			</div>
+			<button class="masthead__burger">
+				<span class="text-hide">Mobile Menu</span>
+			</button>
+			<nav class="masthead__nav" role="navigation">
+				
+				<ul class="masthead__menu">
+					<li class="masthead__dropdown">
+						<a href="#" id="login"><i class="fa fa-user-circle-o fa-2x" aria-hidden="true"></i></a>
+						<section class="masthead__dropdown-content masthead__dropdown-content--form">
+							<h4>Logga in på Mina Sidor</h4>
+							<form class="input v-end">
+								<input class="input__text" type="text" name="username" placeholder="Användarnamn">
+								<input class="input__text" type="text" name="password" placeholder="Lösenord">
+								<button class="btn btn--accept" type="submit">Logga in!</button>
+							</form>
+						</section>
+					</li>
+					<li class="v-centered">
+						<form class="input">
+							<input class="input__search" type="text" name="search" placeholder="Sök..">
+						</form>	
+					</li>
 					<li><a href="#">Start</a></li>
 					<li><a href="#">Om oss</a></li>
-					<li>
+					<li class="masthead__dropdown">
 						<a href="#">Verksamhetsområden</a>
-						<ul>
+						<ul class="masthead__dropdown-content">
 							<li><a href="#">Yrkeshögskolan</a></li>
 							<li><a href="#">Konst- och kulturutbildningar</a></li>
 							<li><a href="#">Tolkutbildningar</a></li>
@@ -37,9 +70,16 @@
 					<li><a href="#">Publikationer</a></li>
 					<li><a href="#">Nyhetsrum</a></li>
 					<li><a href="#">Kontakt</a></li>
-
+					
 				</ul>
 			</nav>
+		</div>
+		<div class="container-fluid masthead__secondary dark">
+				<ul class="masthead__secondary-menu">
+					<li><a href="#"><i class="fa fa-pencil-square fa-2x icon" aria-hidden="true"></i>Ansök om att bedriva utbildning</a></li>
+					<li><a href="#"><i class="fa fa-id-card fa-2x icon" aria-hidden="true"></i>För dig som bedriver utbildning</a></li>
+					<li><a href="#"><i class="fa fa-users fa-2x icon" aria-hidden="true"></i>Företag och organisationer</a></li>
+				</ul>
 		</div>
 	</header>
 	<main class="container">
@@ -120,47 +160,41 @@
 						och sparar dem i vårt diarium. <a href="https://lagen.nu/begrepp/Allm%E4n_handling" target="_blank">
 						Läs förklaring av allmän handling på riksdagens webbplats</a></p>
 
-				<form>
-								
-					<label for="fname">First Name</label>
-					<input type="text" id="fname" name="firstname" placeholder="Your name..">
-								
-					<label for="lname">Last Name</label>
-					<input type="text" id="lname" name="lastname" placeholder="Ditt efternamn">
-								
-					<label for="country">Country</label>
-					<select id="country" name="country">
-					<option value="Kund">Kund</option>
-					<option value="Admin">Admin</option>
-					<option value="Valmöjligheter">Valmöjligheter</option>
-					</select>
-								
-					<label for="subject">Subject</label>
-					<textarea name="subject" placeholder="Write something.."></textarea>
-								
-					<input type="submit" value="Submit">
-								
-				</form>
+				
 					<iframe src="https://maps.google.se/maps/ms?msa=0&amp;msid=208106955202648480291.0004b2df7f01bd721b100&amp;ie=UTF8&amp;t=m&amp;vpsrc=6&amp;ll=58.813742,14.194336&amp;spn=9.11878,20.610352&amp;z=5&amp;output=embed" width="470" height="400"></iframe>
 			</article>
 
 			<aside class="col-4">
-                <nav>
-                    <h3>"Kontaktsätt"</h3>
-                    <ul>
-                        <li><a href="#" title="Hitta Utbildningar">Hitta Utbildningar</a></li>
-                        <li><a href="#" title="Anmäl brister i en utbildning">Anmäl brister i en utbildning</a></li>
-                        <li><a href="#" title="Jobba hos oss">Jobba hos oss</a></li>
-                    </ul>
-                </nav>
+
+				<form>
+					
+		<label for="fname">First Name</label>
+		<input type="text" id="fname" name="firstname" placeholder="Your name.." class="input__text">
+					
+		<label for="lname">Last Name</label>
+		<input type="text" id="lname" name="lastname" placeholder="Ditt efternamn" class="input__text">
+					
+		<label for="country">Country</label>
+		<select id="country" name="country" class="input__text">
+		<option value="Kund">Kund</option>
+		<option value="Admin">Admin</option>
+		<option value="Valmöjligheter">Valmöjligheter</option>
+		</select>
+					
+		<label for="subject" class="input__text">Subject</label>
+		<textarea name="subject" placeholder="Write something.."></textarea>
+					
+		<input type="submit" value="Submit" class="input__text">
+					
+	</form>
 			</aside>
 		</section>
     </main>
     
-	<footer>
+	<footer role="contentinfo" class="site-footer dark">
 		<div class="container">
-			<section class="row">
-				<section class="col-3">
+			<section class="row h-centered">
+				<section class="col-none">
 					<h3>Kontakt</h3>
 					<h4>Telefon</h4>
 					<p>
@@ -170,9 +204,9 @@
 					</p>
 					<h4>E-post</h4>
 					<p>
-						Allmänna frågor/synpunkter: <a href="mailto:info@myh.se">info@myh.se</a>
+						Allmänna frågor/synpunkter: <a class="email" href="mailto:info@myh.se">info@myh.se</a>
 						<br>
-						Registrator: <a href="mailto:registrator@myh.se">registrator@myh.se</a>
+						Registrator: <a class="url" href="mailto:registrator@myh.se">registrator@myh.se</a>
 					</p>
 					<h4>Adress</h4>
 					<p>
@@ -183,7 +217,7 @@
 						721 05 Västerås
 					</p>
 				</section>
-				<section class="col-3">
+				<section class="col-none">
 					<h3>Om webbplatsen</h3>
 					<ul>
 						<li>
@@ -197,7 +231,7 @@
 						</li>
 					</ul>
 
-					<h3></h3>
+					<h3>Våra övriga webbplatser</h3>
 					<ul>
 						<li>
 							<a href="#" title="Yrkeshögskolans webbplats">www.yrkeshogskolan.se</a>
@@ -216,7 +250,7 @@
 						</li>
 					</ul>
 				</section>
-				<section class="col-3">
+				<section class="col-none">
 					<h3>Gå direkt till</h3>
 					<ul>
 						<li>
@@ -243,30 +277,26 @@
 						<li>
 							<a href="#" title="Senaste publikationer">Senaste publikationer</a>
 						</li>
+						<li><a href="#" title="EPALE">Digital mötesplats för utbildningar - EPALE</a></li>
 					</ul>
 
-					<h3></h3>
-					<p>
-						Digital mötesplats för utbildningar
-						<a href="#" title="EPALE">EPALE</a>
-					</p>
 				</section>
-				<section class="col-3">
+				<section class="col-none">
 					<h3>Håll dig uppdaterad</h3>
-					<ul>
+					<ul class="social">
 						<li>
 							<a href="#" title="Facebook">
-								<img src="" alt="Facebook" />
+								<i class="fa fa-facebook-square fa-2x icon" aria-hidden="true"></i>
 							</a>
 						</li>
 						<li>
 							<a href="#" title="YouTube">
-								<img src="" alt="YouTube" />
+								<i class="fa fa-youtube-square fa-2x icon" aria-hidden="true"></i>
 							</a>
 						</li>
 						<li>
 							<a href="#" title="RSS">
-								<img src="" alt="RSS" />
+								<i class="fa fa-rss-square fa-2x icon" aria-hidden="true"></i>
 							</a>
 						</li>
 					</ul>
@@ -279,6 +309,8 @@
 			</section>
 		</div>
 	</footer>
+
+<script type="text/javascript" src="./assets/js/main.js"></script>
 
 </body>
 </html>
