@@ -24,7 +24,7 @@
 }
 
 
-.col-12 h1{
+.h1--white{
 	color: #F6F7EB;
 	margin-bottom: 0;
 }
@@ -41,18 +41,27 @@
 
 /* ------- Media Queries -------*/
 
-@media only screen and (max-width: 38em){
+@media only screen and (max-width: 320px){
 	.row{
 		flex-direction: column;
 	}
 	.image--icon{
 		height: 50px;
 	}
-	h1{
+	.h1--white{
 		font-size: 100%;
 	}
-	.col-6{
-		bottom-top: 1px solid #393E41;
-		border-bottom: 1px solid #393E41
+}
+
+@media only screen and (max-width: 412px){
+	.row{
+		flex-direction: column;
 	}
+	.image--icon{
+		height: 50px;
+	}
+	.h1--white{
+		font-size: 100%;
+	}
+	
 }
