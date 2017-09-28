@@ -70,7 +70,7 @@
 			margin-bottom: 0;
 		}
 
-		p > time {
+		p > time, p.time {
 			font-size: 1.0rem; /* 10px */
 			line-height: 1.2;
 		}
