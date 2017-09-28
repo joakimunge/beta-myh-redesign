@@ -1,0 +1,94 @@
+/*
+    flex-grid
+    use like this:
+    <[element] class="row">
+        <[element] class="col-4">
+        </[element]>
+        <[element] class="col-8">
+        </[element]>
+    </[element]>
+*/
+
+:root {
+    --col-margin: 4px;
+    --col-padding: 20px;
+    --col-min-height: 40px;
+}
+
+/* 
+    it helps to set some kind of base width for media queries and more
+    could be fluid (full-width too)
+*/
+.container {
+  max-width: 1170px;
+  margin: 0 auto;
+}
+
+.container-fluid {
+  min-width: 100%;
+  margin:0 auto;
+}
+
+/* the basis of the grid */
+.row {
+  display: flex;
+}
+
+/* temporary in order to show a different background colour for nested rows/cols */
+[class^="col"] > .row > [class^="col"] {
+}
+
+/* every class that start with "col" */
+[class^="col"] {
+  min-height: var(--col-min-height);
+  margin-right: var(--col-margin);
+  margin-bottom: var(--col-margin);
+  padding: var(--col-padding);
+}
+
+/* for the last .col-class in a .row, remove the margin-right */
+[class^="col"]:last-child {
+  margin-right: 0;
+}
+
+.col-1 { flex: 1; }
+.col-2 { flex: 2; }
+.col-3 { flex: 3; }
+.col-4 { flex: 4; }
+.col-5 { flex: 5; }
+.col-6 { flex: 6; }
+.col-7 { flex: 7; }
+.col-8 { flex: 8; }
+.col-9 { flex: 9; }
+.col-10 { flex: 10; }
+.col-11 { flex: 11; }
+.col-12 { flex: 12; }
+
+/* splits equally, for lazy people */
+.col { flex: 1; }
+
+/*****************
+    utils 
+*****************/
+
+.h-end      { display: flex; justify-content: flex-end;} /* horizontally justify content within its container to the end */
+.v-end      { display: flex; flex-direction: column; justify-content: flex-end;} /* vertically justify content within its container to the end */
+.v-start     { display: flex; flex-direction: column; justify-content: flex-start;} /* vertically justify content within its container to the start */
+.h-centered  { display: flex; justify-content: center; } /* horizontally centred */
+.v-centered  { display: flex; align-items: center; }  /* vertically centred */
+.centered { display: flex; justify-content: center; align-items: center; } /* horizontally & vertically centred */
+.col--nested { padding:0; } /* remove extra padding from nested columns to prevent stacking - Apply to outer column*/
+
+/* media queries */
+
+@media all and (max-width: 640px) {
+
+    .row { 
+        flex-direction: column; 
+    }
+
+    [class^="col"] { 
+        margin-right: 0; 
+    }
+
+}

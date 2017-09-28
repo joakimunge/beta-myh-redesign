@@ -13,20 +13,42 @@
 
 </head>
 <body>
-	<header role="banner" class="container-fluid">
-		<div class="container-fluid top">
-			<a href="#">
-				<h1>MYh - Myndigheten för yrkeshögskolan</h1>
-				<img src="https://www.myh.se/assets/images/myh_logo.png" width="150" alt="MYhs Logotyp" />
-			</a>
-			<nav role="navigation">
-				<button aria-haspopup="true" class="burger"></button>
-				<ul class="menu">
+	<header class="masthead container-fluid" role="banner">
+		<div class="container-fluid masthead__main">
+			<div class="masthead__logo">
+				<a href="./index.html">
+					<h1>MYh - Myndigheten för yrkeshögskolan</h1>
+					<img id="lg" src="assets/img/yh.png" alt="MYhs Logotyp" />
+					<img id="sm" src="assets/img/yh_staende.png" alt="MYG Logotyp">
+				</a>
+			</div>
+			<button class="masthead__burger">
+				<span class="text-hide">Mobile Menu</span>
+			</button>
+			<nav class="masthead__nav" role="navigation">
+				
+				<ul class="masthead__menu">
+					<li class="masthead__dropdown">
+						<a href="#" id="login"><i class="fa fa-user-circle-o fa-2x" aria-hidden="true"></i></a>
+						<section class="masthead__dropdown-content masthead__dropdown-content--form">
+							<h4>Logga in på Mina Sidor</h4>
+							<form class="input v-end">
+								<input class="input__text" type="text" name="username" placeholder="Användarnamn">
+								<input class="input__text" type="text" name="password" placeholder="Lösenord">
+								<button class="btn btn--accept" type="submit">Logga in!</button>
+							</form>
+						</section>
+					</li>
+					<li class="v-centered">
+						<form class="input">
+							<input class="input__search" type="text" name="search" placeholder="Sök..">
+						</form>	
+					</li>
 					<li><a href="#">Start</a></li>
 					<li><a href="#">Om oss</a></li>
-					<li>
-						<a href="#" aria-haspopup="true">Verksamhetsområden</a>
-						<ul class="dropdown__content" role="menu">
+					<li class="masthead__dropdown">
+						<a href="#">Verksamhetsområden</a>
+						<ul class="masthead__dropdown-content">
 							<li><a href="#">Yrkeshögskolan</a></li>
 							<li><a href="#">Konst- och kulturutbildningar</a></li>
 							<li><a href="#">Tolkutbildningar</a></li>
@@ -41,21 +63,16 @@
 					<li><a href="#">Publikationer</a></li>
 					<li><a href="#">Nyhetsrum</a></li>
 					<li><a href="#">Kontakt</a></li>
-
+					
 				</ul>
 			</nav>
-			<form role="search" class="input">
-				<input class="input__search" type="text" name="search" placeholder="Sök..">
-			</form>
 		</div>
-		<div class="container-fluid dark">
-			<div class="container">
-				<ul class="submenu">
-					<li><a href="#"><i class="fa fa-pencil-square fa-2x" aria-hidden="true"></i> Ansök om att bedriva utbildning</a></li>
-					<li><a href="#"><i class="fa fa-id-card fa-2x" aria-hidden="true"></i> För dig som bedriver utbildning</a></li>
-					<li><a href="#"><i class="fa fa-users fa-2x" aria-hidden="true"></i> Företag och organisationer</a></li>
+		<div class="container-fluid masthead__secondary dark">
+				<ul class="masthead__secondary-menu">
+					<li><a href="#"><i class="fa fa-pencil-square fa-2x icon" aria-hidden="true"></i>Ansök om att bedriva utbildning</a></li>
+					<li><a href="#"><i class="fa fa-id-card fa-2x icon" aria-hidden="true"></i>För dig som bedriver utbildning</a></li>
+					<li><a href="#"><i class="fa fa-users fa-2x icon" aria-hidden="true"></i>Företag och organisationer</a></li>
 				</ul>
-			</div>
 		</div>
 	</header>
 	<main role="main" class="container">
@@ -154,10 +171,10 @@
 			</aside>
 		</section>
 	</main>
-	<footer role="contentinfo">
+	<footer role="contentinfo" class="site-footer dark">
 		<div class="container">
-			<section role="region" class="row h-centered">
-				<section role="region" class="col-none">
+			<section class="row h-centered">
+				<section class="col-none">
 					<h3>Kontakt</h3>
 					<h4>Telefon</h4>
 					<p>
@@ -180,7 +197,7 @@
 						721 05 Västerås
 					</p>
 				</section>
-				<section role="region" class="col-none">
+				<section class="col-none">
 					<h3>Om webbplatsen</h3>
 					<ul>
 						<li>
@@ -213,7 +230,7 @@
 						</li>
 					</ul>
 				</section>
-				<section role="region" class="col-none">
+				<section class="col-none">
 					<h3>Gå direkt till</h3>
 					<ul>
 						<li>
@@ -240,29 +257,26 @@
 						<li>
 							<a href="#" title="Senaste publikationer">Senaste publikationer</a>
 						</li>
+						<li><a href="#" title="EPALE">Digital mötesplats för utbildningar - EPALE</a></li>
 					</ul>
 
-					<h3>Digital mötesplats för utbildningar</h3>
-					<p>
-						<a href="#" title="EPALE">EPALE</a>
-					</p>
 				</section>
-				<section role="region" class="col-none">
+				<section class="col-none">
 					<h3>Håll dig uppdaterad</h3>
-					<ul>
+					<ul class="social">
 						<li>
 							<a href="#" title="Facebook">
-								<img src="" alt="Facebook" />
+								<i class="fa fa-facebook-square fa-2x icon" aria-hidden="true"></i>
 							</a>
 						</li>
 						<li>
 							<a href="#" title="YouTube">
-								<img src="" alt="YouTube" />
+								<i class="fa fa-youtube-square fa-2x icon" aria-hidden="true"></i>
 							</a>
 						</li>
 						<li>
 							<a href="#" title="RSS">
-								<img src="" alt="RSS" />
+								<i class="fa fa-rss-square fa-2x icon" aria-hidden="true"></i>
 							</a>
 						</li>
 					</ul>
