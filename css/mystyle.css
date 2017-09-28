@@ -1,0 +1,14 @@
+@media screen and  (max-width: 640px) {
+    aside.col-4{
+        order: -1;
+        width: 100%;
+      
+    }
+    .statistik {
+        display: none;
+    }
+}
+
+section.row{
+    
+}
