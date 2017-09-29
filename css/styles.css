@@ -392,6 +392,39 @@ aside#calendar {
 	padding-right:1rem;
 }
 
+a[data-filetype] {
+    padding: .4rem .4rem .4rem 3.6rem;
+    margin-bottom: .8rem;
+    display: inline-block;
+    position: relative;
+    line-height: 1.5;
+    text-decoration: none;
+    color: #393e41;
+    font-weight: 600; 
+    transition: color 250ms ease;
+}
+
+a[data-filetype]:hover {
+    color: #e94f37;
+}
+
+[data-filetype]:before {
+    content: attr(data-filetype);
+    position: absolute;
+    left: 0;
+    top: -2px;
+    line-height: 1.5;
+	padding: 4px 6px;
+	color: #393e41;
+    background: white;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.10);
+    border: 1px solid #eee;
+    border-radius: 3px;
+}
+
+[data-filetype="pdf"]:before { font-family: 'FontAwesome'; content: '\f1c1'; color: red; }
+[data-filetype="xls"]:before { font-family: 'FontAwesome';  content: '\f1c3'; color: green; }
+[data-filetype="doc"]:before { font-family: 'FontAwesome';  content: '\f1c2'; color: blue; }
 
 /* ------- Footer ------- */
 
