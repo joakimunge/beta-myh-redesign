@@ -80,7 +80,7 @@
 .h-centered  { display: flex; justify-content: center; } /* horizontally centred */
 .v-centered  { display: flex; align-items: center; }  /* vertically centred */
 .centered { display: flex; justify-content: center; align-items: center; } /* horizontally & vertically centred */
-.col--nested { padding:0; } /* remove extra padding from nested columns to prevent stacking - Apply to outer column*/
+.pdg-0 { padding:0; } /* remove extra padding from nested columns to prevent stacking - Apply to outer column*/
 .align-start { align-self:flex-start; } /* Align element to start of parent */
 
 /* media queries */

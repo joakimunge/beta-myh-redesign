@@ -291,17 +291,20 @@ main {
 	margin:25px 0;
 }
 
+#news {
+	margin-top:25px;
+}
+
 .block {
 	min-height: 300px;
 	cursor:pointer;
-
 }
 
 .content {
 	box-shadow: 0px 2px 6px rgba(0,0,0,0.1);
 	background-color: #FFF;
 	border-top: 4px solid #E94F37;
-	margin:25px 25px 0 0;
+	margin:0px 25px 0 0;
 }
 
 .content__story {
