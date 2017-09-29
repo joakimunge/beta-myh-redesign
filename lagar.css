@@ -4,6 +4,10 @@
 @media screen and (max-width: 640px){
   aside{
     order: -1;
-    width: 100%;
+  }
+
+  .share__item i {
+    font-size: 4rem;
+    margin-right: 12px;
   }
 }
