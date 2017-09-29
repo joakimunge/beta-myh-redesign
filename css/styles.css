@@ -493,6 +493,7 @@ footer.site-footer ul.social li {
 	}
 
 	nav.masthead__nav {
+		overflow-y:scroll;
 		display:none;
 		position: fixed;
 		right:0;
