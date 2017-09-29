@@ -575,8 +575,8 @@ footer.site-footer ul.social li {
 }
 
 @media all and (max-width: 640px) {
-	.content {
-		margin:25px 0 0 0;
+	.content:first-of-type {
+		margin:0;
 	}
 
 	.content__img {
