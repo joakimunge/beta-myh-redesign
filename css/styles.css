@@ -113,13 +113,13 @@ header.masthead button.masthead__burger {
 	-o-transition: all 0.3s ease-out;
 }
 
-header.masthead button.masthead__burger:after {
+header.masthead button.masthead__burger::after {
 	font-family: 'FontAwesome';
 	font-size: 24px;
 	line-height: 1;
 	height: 24px;
 	content: "\f0c9";
-	position: fixed;
+	position: absolute;
 	top: 20px;
 	right: 20px;
 }
@@ -129,8 +129,9 @@ header.masthead button.masthead__burger:hover {
 
 }
 
-header.masthead button.masthead__burger.active:after {
+header.masthead button.masthead__burger.active::after {
 	content: '\f00d';
+	position: fixed;
 }
 
 .masthead__logo {
@@ -487,8 +488,8 @@ footer.site-footer ul.social li {
 		display:inline-block;
 	}
 
-	header.masthead button.masthead__burger:after {
-		position: absolute;
+	header.masthead button.masthead__burger::after {
+		z-index: 10000;
 	}
 
 	nav.masthead__nav {
@@ -550,6 +551,7 @@ footer.site-footer ul.social li {
 		margin-left:15px;
 		margin-bottom: 1.4rem;
 	}
+
 }
 
 @media screen and (max-width: 1240px) {
