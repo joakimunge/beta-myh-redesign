@@ -4,6 +4,7 @@
 	<title>Beta - MYH.SE - Lagar</title>
 	<meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" href="assets/font/fontawesome/css/font-awesome.min.css">
+	<link rel="stylesheet" href="assets/font/opensans/fontface-os.css">
 	<link rel="stylesheet" type="text/css" href="css/reset.css">
 	<link rel="stylesheet" type="text/css" href="css/grid.css">
 	<link rel="stylesheet" type="text/css" href="css/type.css">
@@ -120,7 +121,7 @@
 				<p>Genom <a href="#" aria-label="Läs mer om tillsyn">tillsyn</a> kontrollerar myndigheten att utbildningarna följer de lagar och regler som gäller. I menyn till höger kan du läsa om hur tillsynen går till och hitta tillsynsbeslut.</p>
 				<p>Om du anser att det finns brister i en utbildning kan du anmäla det till oss. <a href="#" aria-label="Gå till formulär för att anmäla brister i en utbildning">Anmäl brister i en utbildning.</a></p>
 			</article>
-			<aside role="complementary" class="col-4 sticky-sidenav">
+			<aside role="complementary" class="col-4 pdg-0">
 				<nav class="sidenav">
 					<h3 class="sidenav__title">Lagar, Regler &amp; Tillsyn</h3>
 					<ul class="sidenav__list">
@@ -340,39 +341,6 @@
 		</div>
 	</footer>
 
-	<script>
-			document.querySelector('.masthead__burger').addEventListener('click', function() {
-				this.classList.toggle('active');
-			});
-			
-			
-			/*
-				Sidenav
-			*/
-			
-			// retrieve all ul's with a class that contains "sidenav__list-lv"
-			const subMenus = document.querySelectorAll('ul[class*="sidenav__list-lv"]');
-			
-			if (subMenus) {
-			
-				// run a function for each submenu
-				subMenus.forEach(function(subMenu) { 	
-			
-					// add a listener for clicks to the previous sibling element
-					// in this case the a.sidenav__link
-					subMenu.previousElementSibling.addEventListener('click', function(e) {
-			
-						// prevent browser default behaviour
-						e.preventDefault();
-			
-						// toggle class to the submenu's parent which in this case is the li
-						subMenu.parentNode.classList.toggle('sidenav__item--is-active');
-						
-					});
-			
-				});
-			
-			}
-	</script>
+<script type="text/javascript" src="./assets/js/main.js"></script>
 </body>
 </html>
