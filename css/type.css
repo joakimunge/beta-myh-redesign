@@ -13,6 +13,10 @@
 			font-size: 1.4rem; /* 14px */
 		}
 
+		textarea {
+			font-family: 'Open Sans', 'Helvetica', 'Arial', sans-serif;
+		}
+
 		a {
 			font-weight: 500;
 			text-decoration: none;
